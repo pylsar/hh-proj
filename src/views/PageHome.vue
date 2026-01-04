@@ -2,7 +2,5 @@
 </script>
 
 <template>
-  <main>
-    test
-  </main>
+    PageHome
 </template>
