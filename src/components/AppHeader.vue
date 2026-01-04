@@ -35,9 +35,13 @@
     <app-menubar :model="items" class="menu">
         <template #item="{item, props}">
             <router-link :to="item.path" class="menu-item" v-bind="props.action">
-                <span :class="item.icon"></span>
+                <span :class="item.icon"/>
                 <span>{{ item.label }}</span>
             </router-link>
+        </template>
+        <template #end>
+            <span class="pi pi-sign-out"></span>
+            <span>Выход</span>
         </template>
     </app-menubar>
 </template>
