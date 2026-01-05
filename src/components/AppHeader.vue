@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import {ref, computed} from 'vue'
     import type {ComputedRef} from 'vue'
-    import {useUserStore} from '@/stores/user';
+    import {useUserStore} from '../stores/user';
 
     const userStore = useUserStore();
 
@@ -41,6 +41,7 @@
 </script>
 
 <template>
+    {{ userStore }}
     <app-menubar :model="items" class="menu">
         <template #item="{item, props}">
             <template v-if="item.show">

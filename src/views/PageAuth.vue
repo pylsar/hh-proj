@@ -25,7 +25,7 @@
   })
 
   const submitButtonText = computed<string>(() => {
-    return isLogin.value ? 'Создать' : 'Войти'
+    return isLogin.value ? 'регистрация' : 'Войти'
   })
 
   const signUp = async (): Promise<void> => {
@@ -44,9 +44,28 @@
     }
   }
 
+  const signIn = async (): Promise<void> => {
+    isLoading.value = true;
+
+    try{
+      await signInWithEmailAndPassword(getAuth(), email.value, password.value)
+      router.push('/')
+    }catch(error: unknown){
+      if(error instanceof Error){
+        console.log(error.message)
+        toast.add({severity: 'error', summary: 'Error', detail: error.message, life: 3000})
+      }
+    }finally{
+      isLoading.value = false
+    }
+  }
+
   const submitForm = (): void => {
-    console.log('submit')
-    signUp()
+    if(!isLogin.value){
+      signIn()
+    }else{
+      signUp()
+    }
   }
 
 </script>

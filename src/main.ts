@@ -14,6 +14,7 @@ import Button from 'primevue/button'
 import Inputtext from 'primevue/inputtext'
 import ToastService from 'primevue/toastservice'
 import Toast from 'primevue/toast'
+import ProgressSpiner from 'primevue/progressspinner'
 
 
 import App from './App.vue'
@@ -47,5 +48,6 @@ app.component('app-menubar', Menubar)
 app.component('app-button', Button)
 app.component('app-inputtext', Inputtext)
 app.component('app-toast', Toast)
+app.component('app-srogressspiner', ProgressSpiner)
 
 app.mount('#app')
