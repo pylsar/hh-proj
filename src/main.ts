@@ -12,6 +12,8 @@ import PrimeVue from 'primevue/config'
 import Menubar from 'primevue/menubar'
 import Button from 'primevue/button'
 import Inputtext from 'primevue/inputtext'
+import ToastService from 'primevue/toastservice'
+import Toast from 'primevue/toast'
 
 
 import App from './App.vue'
@@ -32,6 +34,7 @@ initializeApp(firebaseConfig);
 
 const app = createApp(App)
 
+app.use(ToastService)
 app.use(createPinia())
 app.use(router)
 app.use(PrimeVue, {
@@ -43,5 +46,6 @@ app.use(PrimeVue, {
 app.component('app-menubar', Menubar)
 app.component('app-button', Button)
 app.component('app-inputtext', Inputtext)
+app.component('app-toast', Toast)
 
 app.mount('#app')
