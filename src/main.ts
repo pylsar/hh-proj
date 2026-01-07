@@ -14,7 +14,8 @@ import Button from 'primevue/button'
 import Inputtext from 'primevue/inputtext'
 import ToastService from 'primevue/toastservice'
 import Toast from 'primevue/toast'
-import ProgressSpiner from 'primevue/progressspinner'
+import ProgressSpinner from 'primevue/progressspinner'
+import Card from 'primevue/card'
 
 
 import App from './App.vue'
@@ -23,12 +24,12 @@ import router from './router'
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAjtMjtWb6URw7aFqDrbY5XeNVK0U2LpaM",
-  authDomain: "hh-proj-ba0a8.firebaseapp.com",
-  projectId: "hh-proj-ba0a8",
-  storageBucket: "hh-proj-ba0a8.firebasestorage.app",
-  messagingSenderId: "352657830052",
-  appId: "1:352657830052:web:302dab2618eb1b0a433631"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 initializeApp(firebaseConfig);
@@ -48,6 +49,7 @@ app.component('app-menubar', Menubar)
 app.component('app-button', Button)
 app.component('app-inputtext', Inputtext)
 app.component('app-toast', Toast)
-app.component('app-srogressspiner', ProgressSpiner)
+app.component('app-srogressspiner', ProgressSpinner)
+app.component('app-card', Card)
 
 app.mount('#app')
