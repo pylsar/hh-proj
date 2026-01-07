@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import {ref, computed} from 'vue'
+    import type { ISkills } from '@/interfaces'
 
     const skillName = ref<string>('')
     const skillSection = ref<string>('')
@@ -9,11 +10,22 @@
 
 
     const addNewSkill = () => {
-        console.log('addNewSkill')
+        const newObj: ISkills ={
+            id: `${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+            skillName: skillName.value,
+            skillSection: skillSection.value,
+            skillDescription: skillDescription.value,
+            skillPrioritys: skillPrioritys.value,
+            createdAt: new Date()
+        }
+
+        console.log('newObj', newObj)
+
+
     }
 
     const disabledSaveButton = computed<boolean>(() => {
-        return !(skillName.value && skillSection.value && skillDescription.value && skillPrioritys.value)
+        return !(skillName.value && skillSection.value && skillDescription.value)
     })
 
 </script>
@@ -23,13 +35,13 @@
         <app-card>
             <template #title>Новое упражнение</template>
             <template #content>
-                <app-inputtext placeholder="название" v-model="skillName" />
+                <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
 
-                <app-inputtext placeholder="раздел" v-model="skillSection" />
+                <app-inputtext placeholder="раздел" v-model="skillSection" class="skills__input"/>
 
-                <app-inputtext placeholder="описание" v-model="skillDescription" />
+                <app-inputtext placeholder="описание" v-model="skillDescription" class="skills__input"/>
 
-                <app-inputtext placeholder="приоритет" v-model="skillPrioritys" />
+                <app-inputtext placeholder="приоритет" v-model="skillPrioritys" class="skills__input"/>
 
                 <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
             </template>
@@ -37,3 +49,16 @@
 
     </div>
 </template>
+
+
+<style scoped>
+    .skills__wrap{
+        width: 600px;
+        margin: 0 auto;  
+    }
+
+    .skills__input{
+        width: 100%;
+    }
+
+</style>
