@@ -1,11 +1,14 @@
 <script setup lang="ts">
     import {ref, computed} from 'vue'
     import {getAuth} from 'firebase/auth'
+    import { useRouter } from 'vue-router'
     import { getFirestore, setDoc, doc } from 'firebase/firestore'
     import type { ISkills } from '@/interfaces'
 
 
     const db = getFirestore()
+    const router = useRouter()
+
     const skillName = ref<string>('')
     const skillSection = ref<string>('')
     const skillDescription = ref<string>('')
@@ -29,10 +32,13 @@
         const userId = getAuth().currentUser?.uid
 
         if(userId){
-            await setDoc(doc(db, `users/${userId}/skills`, newObj.id), newObj)
+            await setDoc(doc(db, `users/${userId}/skills`, newObj.id), newObj).then( ()=> {
+                router.push('/list')
+                loading.value = false
+
+            })
         }
 
-        loading.value = false
 
     }
 
