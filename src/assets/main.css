@@ -11,3 +11,13 @@
   margin-right: auto;
   /* border: 1px solid red; */
 }
+
+.subtitle{
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.text-blue{
+  color: blue;
+  font-weight: 700;
+}

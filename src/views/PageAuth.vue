@@ -71,24 +71,47 @@
 </script>
 
 <template>
-  <div class="auth_wrap">
+  <div class="auth__wrap">
     <div>
       <app-toast />
         <h1>Добро пожаловать</h1>
-        <span>{{ subtitleText }}</span> <span @click="toggleAuth">{{ linkAccountText }}</span>
+        <div class="subtitle">
+          <span >{{ subtitleText }}</span> <span @click="toggleAuth" class="text-blue">{{ linkAccountText }}</span>
+        </div>
         <form @submit.prevent="submitForm">
-          <div>
+          <div class="auth__form-item">
             <label for="email-field">Email</label>
             <app-inputtext v-model="email" id="email-field" type="email"/>
           </div>
-          <div>
+          <div class="auth__form-item">
             <label for="password-field">Password</label>
             <app-inputtext v-model="password" id="password-field" type="password"/>
           </div>
-          <div>
+          <div class="auth__form-item">
             <app-button :label="submitButtonText" type="submit" icon="pi pi-user" :loading="isLoading"></app-button>
           </div>
         </form>
     </div>
   </div>
 </template>
+
+<style scoped>
+  .auth__wrap{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .auth__wrap h1{
+    text-align: center;
+  }
+
+  .auth__form-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .auth__form-item input{
+    width: 100%;
+  }
+</style>
