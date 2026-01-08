@@ -17,6 +17,14 @@
         return listDocs.docs.map((doc) => doc.data() as T)
     }
 
+    const editSkill = (item: Object) => {
+        console.log('edit', item)
+    }
+
+    const deleteSkill = async (id: string): Promise<void> => {
+        console.log('delete', id)
+    }
+
     onMounted( async() => {
         const listSkills: Array<ISkills> = await getAllSkills();
         console.log('listSkills', listSkills)
@@ -30,9 +38,21 @@
         <h1>Список Скилов</h1>
         <app-datatable :value="skills">
             <app-column field="skillName" header="Название скила"></app-column>  
-            <app-column field="skillSection" header="Секция"></app-column> 
+            <app-column field="skillSection" header="Секция">
+                <template #body="slotProps">
+                    <a :href="slotProps.data.skillSection">{{ slotProps.data.skillSection }}</a>
+                </template>
+            </app-column> 
             <app-column field="skillDescription" header="Описание"></app-column> 
             <app-column field="skillPrioritys" header="Приоритет"></app-column> 
+            <app-column>
+                <template #body="slotProps">
+                    <div>
+                        <app-button @click="editSkill(slotProps.data)" icon="pi pi-pencil" severity="info" />
+                        <app-button @click="deleteSkill(slotProps.data.id)" icon="pi pi-trash" severity="danger" />
+                    </div>
+                </template>
+            </app-column>
         </app-datatable>
     </div>
 </template>
