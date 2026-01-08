@@ -1,7 +1,11 @@
 <script setup lang="ts">
     import {ref, computed} from 'vue'
+    import {getAuth} from 'firebase/auth'
+    import { getFirestore, setDoc, doc } from 'firebase/firestore'
     import type { ISkills } from '@/interfaces'
 
+
+    const db = getFirestore()
     const skillName = ref<string>('')
     const skillSection = ref<string>('')
     const skillDescription = ref<string>('')
@@ -9,7 +13,8 @@
     const loading = ref<boolean>(false)
 
 
-    const addNewSkill = () => {
+    const addNewSkill = async (): Promise<void> => {
+        loading.value = true
         const newObj: ISkills ={
             id: `${Date.now()}-${Math.floor(Math.random() * 1000)}`,
             skillName: skillName.value,
@@ -21,6 +26,13 @@
 
         console.log('newObj', newObj)
 
+        const userId = getAuth().currentUser?.uid
+
+        if(userId){
+            await setDoc(doc(db, `users/${userId}/skills`, newObj.id), newObj)
+        }
+
+        loading.value = false
 
     }
 

@@ -49,7 +49,7 @@ app.component('app-menubar', Menubar)
 app.component('app-button', Button)
 app.component('app-inputtext', Inputtext)
 app.component('app-toast', Toast)
-app.component('app-srogressspiner', ProgressSpinner)
+app.component('app-progressspiner', ProgressSpinner)
 app.component('app-card', Card)
 
 app.mount('#app')
