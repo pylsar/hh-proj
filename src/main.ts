@@ -18,6 +18,8 @@ import ProgressSpinner from 'primevue/progressspinner'
 import Card from 'primevue/card'
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
+import ConfirmDialog from 'primevue/confirmdialog';
+import ConfirmationService from 'primevue/confirmationservice';
  
 
 import App from './App.vue'
@@ -39,6 +41,7 @@ initializeApp(firebaseConfig);
 const app = createApp(App)
 
 app.use(ToastService)
+app.use(ConfirmationService)
 app.use(createPinia())
 app.use(router)
 app.use(PrimeVue, {
@@ -55,5 +58,6 @@ app.component('app-progressspiner', ProgressSpinner)
 app.component('app-card', Card)
 app.component('app-datatable', DataTable)
 app.component('app-column', Column)
+app.component('app-confirmdialog', ConfirmDialog)
 
 app.mount('#app')

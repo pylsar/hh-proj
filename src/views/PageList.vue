@@ -1,14 +1,16 @@
 <script setup lang="ts">
     import {ref, onMounted} from 'vue'
-    import { getFirestore, collection, query, orderBy, getDocs, deleteDoc, docs } from 'firebase/firestore';
+    import { getFirestore, collection, query, orderBy, getDocs, deleteDoc, doc } from 'firebase/firestore';
     import { useUserStore } from '@/stores/user';
     import type { ISkills } from '@/interfaces';
+    import { useConfirm } from 'primevue/useconfirm';
 
     const userStore = useUserStore();
     const db = getFirestore();
+    const confirm = useConfirm();
 
     const skills = ref<ISkills[]>([])
-    const isLoading = ref<boolean>(true)
+    const isLoading = ref<boolean>(false)
 
     const getAllSkills = async <T extends ISkills>(): Promise<T[]> =>{
         const getData = query(collection(db, `users/${userStore.userId}/skills`), orderBy('createdAt', 'desc'))
@@ -23,6 +25,25 @@
 
     const deleteSkill = async (id: string): Promise<void> => {
         console.log('delete', id)
+        confirm.require({
+            message: 'Вы действительно хотите удалить запись?',
+            header: 'Удаление записи',
+            icon: 'pi pi-info-circle',
+            rejectLabel: 'Отмена',
+            acceptLabel: 'Удалить',
+            rejectClass: 'p-button-secondary p-button-outlined',
+            acceptClass: 'p-button-danger',
+            accept: async() => {
+                isLoading: true
+                await deleteDoc(doc(db, `users/${userStore.userId}/skills`, id))
+                // await getAllSkills()
+                const index = skills.value.findIndex(item => item.id === id);
+                if (index !== -1) {
+                    skills.value.splice(index, 1);
+                }
+                isLoading: false
+            }
+        })
     }
 
     onMounted( async() => {
@@ -33,8 +54,9 @@
 </script>
 
 <template>
-
-    <div class="pagelist_wrap">
+    <app-confirmdialog />
+    <app-progressspiner v-if="isLoading"/>
+    <div v-else class="pagelist_wrap">
         <h1>Список Скилов</h1>
         <app-datatable :value="skills">
             <app-column field="skillName" header="Название скила"></app-column>  
@@ -54,5 +76,6 @@
                 </template>
             </app-column>
         </app-datatable>
+        
     </div>
 </template>
