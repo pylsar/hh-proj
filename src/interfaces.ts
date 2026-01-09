@@ -4,5 +4,5 @@ export interface ISkills{
     skillSection: string
     skillDescription: string
     skillPrioritys?: string
-    createdAt: Date
+    createdAt?: Date
 }

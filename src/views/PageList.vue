@@ -17,7 +17,7 @@
     const skillNameEdit = ref<string>('')
     const skillSectionEdit = ref<string>('')
     const skillDescriptionEdit = ref<string>('')
-    const skillPrioritysEdit = ref<string>('')
+    const skillPrioritysEdit = ref<string | undefined>('')
     const editId = ref<string>('')
 
     const getAllSkills = async <T extends ISkills>(): Promise<T[]> =>{
