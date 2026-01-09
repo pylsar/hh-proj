@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import {ref, onMounted, computed} from 'vue'
-    import { getFirestore, collection, query, orderBy, getDocs, deleteDoc, doc } from 'firebase/firestore';
+    import { getFirestore, collection, query, orderBy, getDocs, deleteDoc, doc, updateDoc  } from 'firebase/firestore';
     import { useUserStore } from '@/stores/user';
     import type { ISkills } from '@/interfaces';
     import { useConfirm } from 'primevue/useconfirm';
@@ -28,7 +28,7 @@
     }
 
 
-    const editSkill = (item: ISkills) => {
+    const editSkill = (item: ISkills): void => {
         console.log('edit', item)
         isVisible.value = true
 
@@ -41,15 +41,52 @@
 
 
 
-    const editSkillToSend = async () => {
-       const editObj = {
-            id: editId.value,
-            skillName: skillNameEdit.value,
-            skillSection: skillSectionEdit.value,
-            skillDescription: skillDescriptionEdit.value,
-            skillPrioritys: skillPrioritysEdit.value,
+    const editSkillToSend = async (): Promise<void> => {
+        loadingBtn.value = true
+        try {
+            const editObj = {
+                id: editId.value,
+                skillName: skillNameEdit.value,
+                skillSection: skillSectionEdit.value,
+                skillDescription: skillDescriptionEdit.value,
+                skillPrioritys: skillPrioritysEdit.value,
+            }
+            console.log('editSkillToSend', editObj)
+        
+            const skillRef = doc(db, `users/${userStore.userId}/skills`, editId.value);
+            await updateDoc(skillRef, {
+                skillName: skillNameEdit.value,
+                skillSection: skillSectionEdit.value,
+                skillDescription: skillDescriptionEdit.value,
+                skillPrioritys: skillPrioritysEdit.value,
+            });
+        
+            const index = skills.value.findIndex(item => item.id === editId.value);
+            if (index !== -1) {
+                // Создаем обновленный объект
+                const updatedSkill: ISkills = {
+                    ...skills.value[index], // копируем все старые свойства
+                    ...editObj // перезаписываем обновленными значениями
+                };
+                skills.value[index] = updatedSkill;
+            }
+        
+            isVisible.value = false;
+            resetEditForm();
+            
+        } catch (error) {
+            console.error('Ошибка при обновлении навыка:', error);
+        } finally {
+            loadingBtn.value = false;
         }
-        console.log('editSkillToSend', editObj)
+    }
+
+    const resetEditForm = (): void => {
+        skillNameEdit.value = '';
+        skillSectionEdit.value = '';
+        skillDescriptionEdit.value = '';
+        skillPrioritysEdit.value = '';
+        editId.value = '';
     }
 
     const deleteSkill = async (id: string): Promise<void> => {
@@ -63,20 +100,20 @@
             rejectClass: 'p-button-secondary p-button-outlined',
             acceptClass: 'p-button-danger',
             accept: async() => {
-                isLoading: true
+                isLoading.value = true
                 await deleteDoc(doc(db, `users/${userStore.userId}/skills`, id))
                 // await getAllSkills()
                 const index = skills.value.findIndex(item => item.id === id);
                 if (index !== -1) {
                     skills.value.splice(index, 1);
                 }
-                isLoading: false
+                isLoading.value = false
             }
         })
     }
 
     onMounted( async() => {
-        const listSkills: Array<ISkills> = await getAllSkills();
+        const listSkills: ISkills[] = await getAllSkills();
         console.log('listSkills', listSkills)
         skills.value = [...listSkills]
     })
