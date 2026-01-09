@@ -20,6 +20,7 @@ import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import ConfirmDialog from 'primevue/confirmdialog';
 import ConfirmationService from 'primevue/confirmationservice';
+import Dialog from 'primevue/dialog';
  
 
 import App from './App.vue'
@@ -59,5 +60,6 @@ app.component('app-card', Card)
 app.component('app-datatable', DataTable)
 app.component('app-column', Column)
 app.component('app-confirmdialog', ConfirmDialog)
+app.component('app-dialog', Dialog)
 
 app.mount('#app')

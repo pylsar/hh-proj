@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import {ref, onMounted} from 'vue'
+    import {ref, onMounted, computed} from 'vue'
     import { getFirestore, collection, query, orderBy, getDocs, deleteDoc, doc } from 'firebase/firestore';
     import { useUserStore } from '@/stores/user';
     import type { ISkills } from '@/interfaces';
@@ -11,6 +11,14 @@
 
     const skills = ref<ISkills[]>([])
     const isLoading = ref<boolean>(false)
+    const isVisible = ref<boolean>(false)
+    const loadingBtn = ref<boolean>(false)
+
+    const skillNameEdit = ref<string>('')
+    const skillSectionEdit = ref<string>('')
+    const skillDescriptionEdit = ref<string>('')
+    const skillPrioritysEdit = ref<string>('')
+    const editId = ref<string>('')
 
     const getAllSkills = async <T extends ISkills>(): Promise<T[]> =>{
         const getData = query(collection(db, `users/${userStore.userId}/skills`), orderBy('createdAt', 'desc'))
@@ -19,8 +27,29 @@
         return listDocs.docs.map((doc) => doc.data() as T)
     }
 
-    const editSkill = (item: Object) => {
+
+    const editSkill = (item: ISkills) => {
         console.log('edit', item)
+        isVisible.value = true
+
+        skillNameEdit.value = item.skillName
+        skillSectionEdit.value = item.skillSection
+        skillDescriptionEdit.value = item.skillDescription
+        skillPrioritysEdit.value = item.skillPrioritys
+        editId.value = item.id
+    }
+
+
+
+    const editSkillToSend = async () => {
+       const editObj = {
+            id: editId.value,
+            skillName: skillNameEdit.value,
+            skillSection: skillSectionEdit.value,
+            skillDescription: skillDescriptionEdit.value,
+            skillPrioritys: skillPrioritysEdit.value,
+        }
+        console.log('editSkillToSend', editObj)
     }
 
     const deleteSkill = async (id: string): Promise<void> => {
@@ -51,6 +80,10 @@
         console.log('listSkills', listSkills)
         skills.value = [...listSkills]
     })
+
+    const disabledEditButton = computed<boolean>(() => {
+        return !(skillNameEdit.value && skillSectionEdit.value && skillDescriptionEdit.value)
+    })
 </script>
 
 <template>
@@ -78,4 +111,24 @@
         </app-datatable>
         
     </div>
+
+    <app-dialog v-model:visible="isVisible" modal header="Изменить запись" class="edit-popup">
+        <app-inputtext placeholder="название" v-model="skillNameEdit" class="skills__input"/>
+        <app-inputtext placeholder="раздел" v-model="skillSectionEdit" class="skills__input"/>
+        <app-inputtext placeholder="описание" v-model="skillDescriptionEdit" class="skills__input"/>
+        <app-inputtext placeholder="приоритет" v-model="skillPrioritysEdit" class="skills__input"/>
+
+        <app-button @click="editSkillToSend" label="Создать" :disabled="disabledEditButton" :loading="loadingBtn"></app-button>
+    </app-dialog>
 </template>
+
+<style scoped>
+ .edit-popup{
+        width: 600px;
+        margin: 0 auto;  
+    }
+
+    .edit-popup input{
+        width: 100%;
+    }
+</style>
