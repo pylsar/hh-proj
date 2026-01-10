@@ -31,7 +31,7 @@ onMounted( () => {
   <div v-else class="container">
     <app-header />
     <div>
-      <RouterView />
+      <RouterView /> 
     </div>
   </div>
 
