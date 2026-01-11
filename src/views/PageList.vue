@@ -15,7 +15,7 @@
     const loadingBtn = ref<boolean>(false)
 
     const skillNameEdit = ref<string>('')
-    const skillSectionEdit = ref<string>('')
+    const skillSectionEdit = ref<{ name: string; code: string } | null>(null)
     const skillDescriptionEdit = ref<string>('')
     const skillPrioritysEdit = ref<string | undefined>('')
     const editId = ref<string>('')
@@ -54,6 +54,12 @@
     const editSkillToSend = async (): Promise<void> => {
         loadingBtn.value = true
         try {
+
+            if (!skillSectionEdit.value) {
+                loadingBtn.value = false
+                return
+            }
+
             const editObj = {
                 id: editId.value,
                 skillName: skillNameEdit.value,
@@ -93,7 +99,7 @@
 
     const resetEditForm = (): void => {
         skillNameEdit.value = '';
-        skillSectionEdit.value = '';
+        skillSectionEdit.value = null;
         skillDescriptionEdit.value = '';
         skillPrioritysEdit.value = '';
         editId.value = '';

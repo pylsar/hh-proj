@@ -10,7 +10,7 @@
     const router = useRouter()
 
     const skillName = ref<string>('')
-    const skillSection = ref<string>('')
+    const skillSection = ref<{ name: string; code: string } | null>(null)
     const skillDescription = ref<string>('')
     const skillPrioritys = ref<string>('')
     const loading = ref<boolean>(false)
@@ -27,6 +27,12 @@
 
     const addNewSkill = async (): Promise<void> => {
         loading.value = true
+
+         if (!skillSection.value) {
+            loading.value = false
+            return
+        } 
+        
         const newObj: ISkills ={
             id: `${Date.now()}-${Math.floor(Math.random() * 1000)}`,
             skillName: skillName.value,
