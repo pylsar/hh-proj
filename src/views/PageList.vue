@@ -20,6 +20,16 @@
     const skillPrioritysEdit = ref<string | undefined>('')
     const editId = ref<string>('')
 
+    const activeSection = ref<string | null>(null)
+    const sections = ref([
+        { name: 'Фильмы', code: 'movies' },
+        { name: 'Сериалы', code: 'smovies' },
+        { name: 'Книги', code: 'books' },
+        { name: 'Игры', code: 'games' },
+        { name: 'Спорт', code: 'sports' },
+        { name: 'Разное', code: 'dif' }
+    ]);
+
     const getAllSkills = async <T extends ISkills>(): Promise<T[]> =>{
         const getData = query(collection(db, `users/${userStore.userId}/skills`), orderBy('createdAt', 'desc'))
         const listDocs = await getDocs(getData)
@@ -121,18 +131,50 @@
     const disabledEditButton = computed<boolean>(() => {
         return !(skillNameEdit.value && skillSectionEdit.value && skillDescriptionEdit.value)
     })
+
+
+    const filterList = (section: { name: string; code: string }): void => {
+        if (activeSection.value === section.code) {
+            // Если нажимаем на уже активную секцию, снимаем фильтр
+            activeSection.value = null;
+        } else {
+            // Иначе устанавливаем новую активную секцию
+            activeSection.value = section.code;
+        }
+    }
+
+    const filteredSkills = computed<ISkills[]>(() => {
+        if (!activeSection.value) {
+            return skills.value;
+        }
+        
+        return skills.value.filter(skill => {
+            return skill.skillSection.code === activeSection.value;
+        });
+    });
 </script>
 
 <template>
     <app-confirmdialog />
     <app-progressspiner v-if="isLoading"/>
     <div v-else class="pagelist_wrap">
-        <h1>Список Скилов</h1>
-        <app-datatable :value="skills">
-            <app-column field="skillName" header="Название скила"></app-column>  
+        <h1>Мой Список</h1>
+        <div>
+            <div v-for="section in sections" :key="section.code" @click="filterList(section)" :class="['section-filter', { 'active': activeSection === section.code }]">
+                <span>
+                    {{ section.name }}
+                </span>
+            </div>
+            <div v-if="activeSection" @click="activeSection = null" class="section-filter reset-filter">
+                <span>Показать все</span>
+            </div>
+        </div>
+        
+        <app-datatable :value="filteredSkills">
+            <app-column field="skillName" header="Название"></app-column>  
             <app-column field="skillSection" header="Секция">
                 <template #body="slotProps">
-                    <a :href="slotProps.data.skillSection">{{ slotProps.data.skillSection }}</a>
+                    <span>{{ slotProps.data.skillSection.name }}</span>
                 </template>
             </app-column> 
             <app-column field="skillDescription" header="Описание"></app-column> 
@@ -151,21 +193,26 @@
 
     <app-dialog v-model:visible="isVisible" modal header="Изменить запись" class="edit-popup">
         <app-inputtext placeholder="название" v-model="skillNameEdit" class="skills__input"/>
-        <app-inputtext placeholder="раздел" v-model="skillSectionEdit" class="skills__input"/>
-        <app-inputtext placeholder="описание" v-model="skillDescriptionEdit" class="skills__input"/>
+        <app-select placeholder="раздел" v-model="skillSectionEdit" :options="sections" optionLabel="name" class="skills__input"/>
+        <app-textarea placeholder="описание" v-model="skillDescriptionEdit" rows="5" cols="30" class="skills__input"/>
         <app-inputtext placeholder="приоритет" v-model="skillPrioritysEdit" class="skills__input"/>
-
         <app-button @click="editSkillToSend" label="Создать" :disabled="disabledEditButton" :loading="loadingBtn"></app-button>
     </app-dialog>
 </template>
 
 <style scoped>
- .edit-popup{
+    .edit-popup{
         width: 600px;
         margin: 0 auto;  
     }
 
-    .edit-popup input{
+    .edit-popup input,
+    .edit-popup .p-select,
+    .edit-popup textarea{
         width: 100%;
+    }
+
+    .section-filter.active{
+        border: 1px solid red;
     }
 </style>

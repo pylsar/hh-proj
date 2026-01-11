@@ -15,6 +15,15 @@
     const skillPrioritys = ref<string>('')
     const loading = ref<boolean>(false)
 
+    const sections = ref([
+        { name: 'Фильмы', code: 'movies' },
+        { name: 'Сериалы', code: 'smovies' },
+        { name: 'Книги', code: 'books' },
+        { name: 'Игры', code: 'games' },
+        { name: 'Спорт', code: 'sports' },
+        { name: 'Разное', code: 'dif' }
+    ]);
+
 
     const addNewSkill = async (): Promise<void> => {
         loading.value = true
@@ -54,13 +63,9 @@
             <template #title>Новое упражнение</template>
             <template #content>
                 <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
-
-                <app-inputtext placeholder="раздел" v-model="skillSection" class="skills__input"/>
-
-                <app-inputtext placeholder="описание" v-model="skillDescription" class="skills__input"/>
-
+                <app-select placeholder="раздел" v-model="skillSection" :options="sections" optionLabel="name" class="skills__input"/>
+                <app-textarea placeholder="описание" v-model="skillDescription" rows="5" cols="30" class="skills__input"/>
                 <app-inputtext placeholder="приоритет" v-model="skillPrioritys" class="skills__input"/>
-
                 <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
             </template>
         </app-card>

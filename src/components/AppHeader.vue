@@ -55,7 +55,6 @@
 </script>
 
 <template>
-    {{ userStore.userId }}
     <app-menubar :model="items" class="menu">
         <template #item="{item, props}">
             <router-link v-if="item.show" :to="item.path" class="menu-item" v-bind="props.action">

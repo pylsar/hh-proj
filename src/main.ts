@@ -21,6 +21,8 @@ import Column from 'primevue/column'
 import ConfirmDialog from 'primevue/confirmdialog';
 import ConfirmationService from 'primevue/confirmationservice';
 import Dialog from 'primevue/dialog';
+import Select from 'primevue/select';
+import Textarea from 'primevue/textarea';
  
 
 import App from './App.vue'
@@ -61,5 +63,9 @@ app.component('app-datatable', DataTable)
 app.component('app-column', Column)
 app.component('app-confirmdialog', ConfirmDialog)
 app.component('app-dialog', Dialog)
+app.component('app-select', Select)
+app.component('app-textarea', Textarea)
+
+
 
 app.mount('#app')
