@@ -63,7 +63,7 @@
             </router-link>
         </template>
         <template #end>
-            <span v-if="userStore.userId" @click="signOutFunc">
+            <span v-if="userStore.userId" @click="signOutFunc" class="sign-out">
                 <span class="pi pi-sign-out"></span>
                 <span>Выход</span>
             </span>
@@ -71,3 +71,15 @@
     </app-menubar>
 
 </template>
+
+<style>
+    .menu{
+        margin-bottom: 20px;
+    }
+    
+    .menu .sign-out{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+</style>

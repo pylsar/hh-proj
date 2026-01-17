@@ -27,7 +27,9 @@ onMounted( () => {
 </script>
 
 <template>
-  <app-progressspiner v-if="isLoading"/>
+  <div v-if="isLoading" class="spiner-box">
+   <app-progressspiner />
+  </div>
   <div v-else class="container">
     <app-header />
     <div>
@@ -37,3 +39,13 @@ onMounted( () => {
 
 </template>
 
+<style>
+  .spiner-box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+</style>

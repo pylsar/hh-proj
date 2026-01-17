@@ -65,14 +65,16 @@
 
 <template>
     <div class="skills__wrap">
-        <app-card>
-            <template #title>Новое упражнение</template>
-            <template #content>
-                <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
-                <app-select placeholder="раздел" v-model="skillSection" :options="sections" optionLabel="name" class="skills__input"/>
-                <app-textarea placeholder="описание" v-model="skillDescription" rows="5" cols="30" class="skills__input"/>
-                <app-inputtext placeholder="приоритет" v-model="skillPrioritys" class="skills__input"/>
-                <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
+        <app-card class="skills__card">
+            <template #title>Новый элемент</template>
+            <template #content >
+                <div class="card-content">
+                    <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
+                    <app-select placeholder="раздел" v-model="skillSection" :options="sections" optionLabel="name" class="skills__input"/>
+                    <app-textarea placeholder="описание" v-model="skillDescription" rows="5" cols="30" class="skills__input"/>
+                    <app-inputtext placeholder="приоритет" v-model="skillPrioritys" class="skills__input"/>
+                    <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
+                </div>
             </template>
         </app-card>
 
@@ -86,8 +88,21 @@
         margin: 0 auto;  
     }
 
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .skills__input{
         width: 100%;
+    }
+
+
+    @media (max-width: 668px) {
+        .skills__wrap{
+            width: 100%;
+        }
     }
 
 </style>
