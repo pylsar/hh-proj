@@ -1,3 +1,33 @@
+
+<template>
+  <div class="auth__wrap">
+    <div>
+      <app-toast />
+        <h1>Добро пожаловать</h1>
+        <div class="subtitle">
+          <span >{{ subtitleText }}</span> <span @click="toggleAuth" class="text-blue">{{ linkAccountText }}</span>
+        </div>
+        <form @submit.prevent="submitForm">
+          <div class="auth__form-item">
+            <label for="email-field">Email</label>
+            <app-inputtext v-model="email" id="email-field" type="email"/>
+          </div>
+          <div class="auth__form-item">
+            <label for="password-field">Password</label>
+            <app-inputtext v-model="password" id="password-field" type="password"/>
+          </div>
+          <div v-if="isLogin">
+            <div class="auth__form-item">
+                <app-button :label="submitButtonText" type="submit" icon="pi pi-user" :loading="isLoading"></app-button>
+            </div>
+            </div>
+        </form>
+    </div>
+  </div>
+</template>
+
+
+
 <script setup lang="ts">
   import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth'
   import {computed, ref} from 'vue'
@@ -25,7 +55,7 @@
   })
 
   const submitButtonText = computed<string>(() => {
-    return isLogin.value ? 'регистрация' : 'Войти'
+    return isLogin.value ? 'Войти' : 'Регистрация'
   })
 
   const signUp = async (): Promise<void> => {
@@ -62,38 +92,13 @@
 
   const submitForm = (): void => {
     if(!isLogin.value){
-      signIn()
-    }else{
       signUp()
+    }else{
+      signIn()
     }
   }
 
 </script>
-
-<template>
-  <div class="auth__wrap">
-    <div>
-      <app-toast />
-        <h1>Добро пожаловать</h1>
-        <div class="subtitle">
-          <span >{{ subtitleText }}</span> <span @click="toggleAuth" class="text-blue">{{ linkAccountText }}</span>
-        </div>
-        <form @submit.prevent="submitForm">
-          <div class="auth__form-item">
-            <label for="email-field">Email</label>
-            <app-inputtext v-model="email" id="email-field" type="email"/>
-          </div>
-          <div class="auth__form-item">
-            <label for="password-field">Password</label>
-            <app-inputtext v-model="password" id="password-field" type="password"/>
-          </div>
-          <div class="auth__form-item">
-            <app-button :label="submitButtonText" type="submit" icon="pi pi-user" :loading="isLoading"></app-button>
-          </div>
-        </form>
-    </div>
-  </div>
-</template>
 
 <style scoped>
   .auth__wrap{
