@@ -7,7 +7,7 @@
     <div v-else class="pagelist_wrap">
         <h1>Мой Список</h1>
         <div class="top-menu-items">
-            <div v-for="section in sections" :key="section.code" @click="filterList(section)"  :class="['top-menu-item', { 'active': activeSection === section.code }]">
+            <div v-for="section in sectionOptions" :key="section.code" @click="filterList(section)"  :class="['top-menu-item', { 'active': activeSection === section.code }]">
                 <span>
                     {{ section.name }}
                 </span>
@@ -44,9 +44,9 @@
         <app-dialog v-model:visible="isVisible" modal header="Изменить запись">
             <div class="card-content">
                 <app-inputtext placeholder="название" v-model="skillNameEdit" class="skills__input"/>
-                <app-select placeholder="раздел" v-model="skillSectionEdit" :options="sections" optionLabel="name" class="skills__input"/>
+                <app-select placeholder="раздел" v-model="skillSectionEdit" :options="sectionOptions" optionLabel="name" class="skills__input"/>
                 <app-textarea placeholder="описание" v-model="skillDescriptionEdit" rows="5" cols="30" class="skills__input"/>
-                <app-select placeholder="приоритет" v-model="skillPrioritysEdit" :options="priorites" optionLabel="name" class="skills__input"/>
+                <app-select placeholder="приоритет" v-model="skillPrioritysEdit" :options="priorityOptions" optionLabel="name" class="skills__input"/>
                 <app-button @click="editSkillToSend" label="Создать" :disabled="disabledEditButton" :loading="loadingBtn"></app-button>
             </div>
         </app-dialog>
@@ -63,10 +63,12 @@
     import { useUserStore } from '@/stores/user';
     import type { ISkills } from '@/interfaces';
     import { useConfirm } from 'primevue/useconfirm';
+    import { useListingStore, type Section, type Priority } from '@/stores/listing';
 
     const userStore = useUserStore();
     const db = getFirestore();
     const confirm = useConfirm();
+    const listingStore = useListingStore()
 
     const skills = ref<ISkills[]>([])
     const isLoading = ref<boolean>(false)
@@ -74,26 +76,15 @@
     const loadingBtn = ref<boolean>(false)
 
     const skillNameEdit = ref<string>('')
-    const skillSectionEdit = ref<{ name: string; code: string } | null>(null)
+    const skillSectionEdit = ref<Section | null>(null)
     const skillDescriptionEdit = ref<string>('')
-    const skillPrioritysEdit = ref<{ name: string; code: string } | null>(null)
+    const skillPrioritysEdit = ref<Priority | null>(null)
     const editId = ref<string>('')
 
     const activeSection = ref<string | null>(null)
-    const sections = ref([
-        { name: 'Фильмы', code: 'movies' },
-        { name: 'Сериалы', code: 'smovies' },
-        { name: 'Книги', code: 'books' },
-        { name: 'Игры', code: 'games' },
-        { name: 'Спорт', code: 'sports' },
-        { name: 'Разное', code: 'dif' }
-    ]);
 
-    const priorites = ref([
-        { name: 'Низкий', code: 'low' },
-        { name: 'Средний', code: 'middle' },
-        { name: 'Высокий', code: 'high' },
-    ]);
+    const sectionOptions = listingStore.sections 
+    const priorityOptions = listingStore.priorities  
 
     const getAllSkills = async <T extends ISkills>(): Promise<T[]> =>{
         const getData = query(collection(db, `users/${userStore.userId}/skills`), orderBy('createdAt', 'desc'))
@@ -112,13 +103,6 @@
         skillDescriptionEdit.value = item.skillDescription
         skillPrioritysEdit.value = item.skillPrioritys
         editId.value = item.id
-
-        // if (item.skillPrioritys) {
-        //     skillPrioritysEdit.value = item.skillPrioritys
-        // } else {
-        //     // 'Низкий' приоритет по умолчанию
-        //     skillPrioritysEdit.value = priorites.value[0]
-        // }
     }
 
 
@@ -132,11 +116,6 @@
                 return
             }
 
-            // Если priority не выбран, устанавливаем значение по умолчанию
-            // if (!skillPrioritysEdit.value) {
-            //     skillPrioritysEdit.value = priorites.value[0]
-            // }
-
             //проверка на undefined
             const defaultPriority = { name: 'Низкий', code: 'low' } as const;
 
@@ -145,7 +124,7 @@
                 skillName: skillNameEdit.value,
                 skillSection: skillSectionEdit.value,
                 skillDescription: skillDescriptionEdit.value,
-                skillPrioritys: skillPrioritysEdit.value || priorites.value[0] || defaultPriority,
+                skillPrioritys: skillPrioritysEdit.value || priorityOptions[0] || defaultPriority,
             }
             console.log('editSkillToSend', editObj)
         
@@ -219,7 +198,7 @@
     })
 
 
-    const filterList = (section: { name: string; code: string }): void => {
+    const filterList = (section: Section): void => {
         if (activeSection.value === section.code) {
             // Если нажимаем на уже активную секцию, снимаем фильтр
             activeSection.value = null;
@@ -285,7 +264,7 @@
     }
 
     .top-menu-item.active{
-        border: 1px solid red;
+        background: skyblue;
         cursor: default;
     }
 

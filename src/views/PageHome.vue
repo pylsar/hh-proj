@@ -6,9 +6,9 @@
             <template #content >
                 <div class="card-content">
                     <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
-                    <app-select placeholder="раздел" v-model="skillSection" :options="sections" optionLabel="name" class="skills__input"/>
+                    <app-select placeholder="раздел" v-model="skillSection" :options="sectionOptions" optionLabel="name" class="skills__input"/>
                     <app-textarea placeholder="описание" v-model="skillDescription" rows="5" cols="30" class="skills__input"/>
-                    <app-select placeholder="приоритет" v-model="skillPrioritys" :options="priorites" optionLabel="name" class="skills__input"/>
+                    <app-select placeholder="приоритет" v-model="skillPrioritys" :options="priorityOptions" optionLabel="name" class="skills__input"/>
                     <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
                 </div>
             </template>
@@ -22,32 +22,21 @@
     import { useRouter } from 'vue-router'
     import { getFirestore, setDoc, doc } from 'firebase/firestore'
     import type { ISkills } from '@/interfaces'
+    import { useListingStore, type Section, type Priority } from '@/stores/listing';
 
 
     const db = getFirestore()
     const router = useRouter()
+    const listingStore = useListingStore()
 
     const skillName = ref<string>('')
-    const skillSection = ref<{ name: string; code: string } | null>(null)
+    const skillSection = ref<Section | null>(null)
     const skillDescription = ref<string>('')
-    const skillPrioritys = ref<{ name: string; code: string } | null>(null)
+    const skillPrioritys = ref<Priority | null>(null)
     const loading = ref<boolean>(false)
 
-    const sections = ref([
-        { name: 'Фильмы', code: 'movies' },
-        { name: 'Сериалы', code: 'smovies' },
-        { name: 'Книги', code: 'books' },
-        { name: 'Игры', code: 'games' },
-        { name: 'Спорт', code: 'sports' },
-        { name: 'Разное', code: 'dif' }
-    ]);
-
-    const priorites = ref([
-        { name: 'Низкий', code: 'low' },
-        { name: 'Средний', code: 'middle' },
-        { name: 'Высокий', code: 'high' },
-    ]);
-
+    const sectionOptions = listingStore.sections 
+    const priorityOptions = listingStore.priorities  
 
     const addNewSkill = async (): Promise<void> => {
         loading.value = true
@@ -56,11 +45,6 @@
             loading.value = false
             return
         } 
-
-         // Если priority не выбран, устанавливаем значение по умолчанию
-        // if (!skillPrioritys.value) {
-        //     skillPrioritys.value = priorites.value[0]
-        // }
 
         //проверка на undefined
         const defaultPriority = { name: 'Низкий', code: 'low' } as const;
@@ -71,7 +55,7 @@
             skillName: skillName.value,
             skillSection: skillSection.value,
             skillDescription: skillDescription.value,
-            skillPrioritys: skillPrioritys.value || priorites.value[0] || defaultPriority,
+            skillPrioritys: skillPrioritys.value || priorityOptions[0] || defaultPriority,
             createdAt: new Date()
         }
 

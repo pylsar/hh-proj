@@ -1,14 +1,9 @@
+import type { Section, Priority } from '@/stores/listing'
 export interface ISkills{
     id: string
     skillName: string
-    skillSection: {  
-        name: string
-        code: string
-    }
+    skillSection: Section
     skillDescription: string
-    skillPrioritys: {  
-        name: string
-        code: string
-    }
+    skillPrioritys: Priority
     createdAt?: Date
 }
