@@ -6,6 +6,9 @@ export interface ISkills{
         code: string
     }
     skillDescription: string
-    skillPrioritys?: string
+    skillPrioritys: {  
+        name: string
+        code: string
+    }
     createdAt?: Date
 }

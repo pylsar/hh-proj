@@ -1,3 +1,62 @@
+
+<template>
+    <app-confirmdialog />
+    <div v-if="isLoading" class="spiner-box">
+        <app-progressspiner />
+    </div>
+    <div v-else class="pagelist_wrap">
+        <h1>Мой Список</h1>
+        <div class="top-menu-items">
+            <div v-for="section in sections" :key="section.code" @click="filterList(section)"  :class="['top-menu-item', { 'active': activeSection === section.code }]">
+                <span>
+                    {{ section.name }}
+                </span>
+            </div>
+            <div v-if="activeSection" @click="activeSection = null" class="top-menu-item reset-filter">
+                <span>Показать все</span>
+            </div>
+        </div>
+        
+        <app-datatable :value="filteredSkills">
+            <app-column field="skillName" header="Название"></app-column>  
+            <app-column field="skillSection" header="Секция">
+                <template #body="slotProps">
+                    <span>{{ slotProps.data.skillSection.name }}</span>
+                </template>
+            </app-column> 
+            <app-column field="skillDescription" header="Описание"></app-column> 
+            <app-column field="skillPrioritys" header="Приоритет">
+                 <template #body="slotProps">
+                    <span>{{ slotProps.data.skillPrioritys.name }}</span>
+                </template>
+            </app-column> 
+            <app-column>
+                <template #body="slotProps">
+                    <div class="table-controls">
+                        <app-button @click="editSkill(slotProps.data)" icon="pi pi-pencil" severity="info" />
+                        <app-button @click="deleteSkill(slotProps.data.id)" icon="pi pi-trash" severity="danger" />
+                    </div>
+                </template>
+            </app-column>
+        </app-datatable>
+
+        <div class="edit-popup">
+        <app-dialog v-model:visible="isVisible" modal header="Изменить запись">
+            <div class="card-content">
+                <app-inputtext placeholder="название" v-model="skillNameEdit" class="skills__input"/>
+                <app-select placeholder="раздел" v-model="skillSectionEdit" :options="sections" optionLabel="name" class="skills__input"/>
+                <app-textarea placeholder="описание" v-model="skillDescriptionEdit" rows="5" cols="30" class="skills__input"/>
+                <app-select placeholder="приоритет" v-model="skillPrioritysEdit" :options="priorites" optionLabel="name" class="skills__input"/>
+                <app-button @click="editSkillToSend" label="Создать" :disabled="disabledEditButton" :loading="loadingBtn"></app-button>
+            </div>
+        </app-dialog>
+    </div>
+        
+    </div>
+    
+</template>
+
+
 <script setup lang="ts">
     import {ref, onMounted, computed} from 'vue'
     import { getFirestore, collection, query, orderBy, getDocs, deleteDoc, doc, updateDoc  } from 'firebase/firestore';
@@ -17,7 +76,7 @@
     const skillNameEdit = ref<string>('')
     const skillSectionEdit = ref<{ name: string; code: string } | null>(null)
     const skillDescriptionEdit = ref<string>('')
-    const skillPrioritysEdit = ref<string | undefined>('')
+    const skillPrioritysEdit = ref<{ name: string; code: string } | null>(null)
     const editId = ref<string>('')
 
     const activeSection = ref<string | null>(null)
@@ -28,6 +87,12 @@
         { name: 'Игры', code: 'games' },
         { name: 'Спорт', code: 'sports' },
         { name: 'Разное', code: 'dif' }
+    ]);
+
+    const priorites = ref([
+        { name: 'Низкий', code: 'low' },
+        { name: 'Средний', code: 'middle' },
+        { name: 'Высокий', code: 'high' },
     ]);
 
     const getAllSkills = async <T extends ISkills>(): Promise<T[]> =>{
@@ -47,6 +112,13 @@
         skillDescriptionEdit.value = item.skillDescription
         skillPrioritysEdit.value = item.skillPrioritys
         editId.value = item.id
+
+        // if (item.skillPrioritys) {
+        //     skillPrioritysEdit.value = item.skillPrioritys
+        // } else {
+        //     // 'Низкий' приоритет по умолчанию
+        //     skillPrioritysEdit.value = priorites.value[0]
+        // }
     }
 
 
@@ -60,12 +132,20 @@
                 return
             }
 
+            // Если priority не выбран, устанавливаем значение по умолчанию
+            // if (!skillPrioritysEdit.value) {
+            //     skillPrioritysEdit.value = priorites.value[0]
+            // }
+
+            //проверка на undefined
+            const defaultPriority = { name: 'Низкий', code: 'low' } as const;
+
             const editObj = {
                 id: editId.value,
                 skillName: skillNameEdit.value,
                 skillSection: skillSectionEdit.value,
                 skillDescription: skillDescriptionEdit.value,
-                skillPrioritys: skillPrioritysEdit.value,
+                skillPrioritys: skillPrioritysEdit.value || priorites.value[0] || defaultPriority,
             }
             console.log('editSkillToSend', editObj)
         
@@ -101,7 +181,7 @@
         skillNameEdit.value = '';
         skillSectionEdit.value = null;
         skillDescriptionEdit.value = '';
-        skillPrioritysEdit.value = '';
+        skillPrioritysEdit.value = null;
         editId.value = '';
     }
 
@@ -160,56 +240,16 @@
     });
 </script>
 
-<template>
-    <app-confirmdialog />
-    <app-progressspiner v-if="isLoading"/>
-    <div v-else class="pagelist_wrap">
-        <h1>Мой Список</h1>
-        <div>
-            <div v-for="section in sections" :key="section.code" @click="filterList(section)" :class="['section-filter', { 'active': activeSection === section.code }]">
-                <span>
-                    {{ section.name }}
-                </span>
-            </div>
-            <div v-if="activeSection" @click="activeSection = null" class="section-filter reset-filter">
-                <span>Показать все</span>
-            </div>
-        </div>
-        
-        <app-datatable :value="filteredSkills">
-            <app-column field="skillName" header="Название"></app-column>  
-            <app-column field="skillSection" header="Секция">
-                <template #body="slotProps">
-                    <span>{{ slotProps.data.skillSection.name }}</span>
-                </template>
-            </app-column> 
-            <app-column field="skillDescription" header="Описание"></app-column> 
-            <app-column field="skillPrioritys" header="Приоритет"></app-column> 
-            <app-column>
-                <template #body="slotProps">
-                    <div>
-                        <app-button @click="editSkill(slotProps.data)" icon="pi pi-pencil" severity="info" />
-                        <app-button @click="deleteSkill(slotProps.data.id)" icon="pi pi-trash" severity="danger" />
-                    </div>
-                </template>
-            </app-column>
-        </app-datatable>
-        
-    </div>
-
-    <app-dialog v-model:visible="isVisible" modal header="Изменить запись" class="edit-popup">
-        <app-inputtext placeholder="название" v-model="skillNameEdit" class="skills__input"/>
-        <app-select placeholder="раздел" v-model="skillSectionEdit" :options="sections" optionLabel="name" class="skills__input"/>
-        <app-textarea placeholder="описание" v-model="skillDescriptionEdit" rows="5" cols="30" class="skills__input"/>
-        <app-inputtext placeholder="приоритет" v-model="skillPrioritysEdit" class="skills__input"/>
-        <app-button @click="editSkillToSend" label="Создать" :disabled="disabledEditButton" :loading="loadingBtn"></app-button>
-    </app-dialog>
-</template>
-
 <style scoped>
     .edit-popup{
         width: 600px;
         margin: 0 auto;  
+    }
+
+     .card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .edit-popup input,
@@ -218,7 +258,53 @@
         width: 100%;
     }
 
-    .section-filter.active{
-        border: 1px solid red;
+    .pagelist_wrap h1 {
+        margin-bottom: 20px;
     }
+
+    .spiner-box{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-menu-items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .top-menu-item{
+        padding: 6px 12px;
+        border: 1px solid var(--p-menubar-border-color);
+        cursor: pointer;
+        border-radius: var(--p-menubar-border-radius);
+    }
+
+    .top-menu-item.active{
+        border: 1px solid red;
+        cursor: default;
+    }
+
+    .table-controls{
+        display: flex;
+        gap: 6px;
+    }
+
+    .table-controls button{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    @media (max-width: 668px) {
+       .edit-popup{
+            width: 100%;
+        }
+    }
+
+
 </style>

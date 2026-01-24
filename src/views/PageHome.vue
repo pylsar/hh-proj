@@ -1,3 +1,21 @@
+
+<template>
+    <div class="skills__wrap">
+        <app-card class="skills__card">
+            <template #title>Новый элемент</template>
+            <template #content >
+                <div class="card-content">
+                    <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
+                    <app-select placeholder="раздел" v-model="skillSection" :options="sections" optionLabel="name" class="skills__input"/>
+                    <app-textarea placeholder="описание" v-model="skillDescription" rows="5" cols="30" class="skills__input"/>
+                    <app-select placeholder="приоритет" v-model="skillPrioritys" :options="priorites" optionLabel="name" class="skills__input"/>
+                    <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
+                </div>
+            </template>
+        </app-card>
+    </div>
+</template>
+
 <script setup lang="ts">
     import {ref, computed} from 'vue'
     import {getAuth} from 'firebase/auth'
@@ -12,7 +30,7 @@
     const skillName = ref<string>('')
     const skillSection = ref<{ name: string; code: string } | null>(null)
     const skillDescription = ref<string>('')
-    const skillPrioritys = ref<string>('')
+    const skillPrioritys = ref<{ name: string; code: string } | null>(null)
     const loading = ref<boolean>(false)
 
     const sections = ref([
@@ -24,21 +42,36 @@
         { name: 'Разное', code: 'dif' }
     ]);
 
+    const priorites = ref([
+        { name: 'Низкий', code: 'low' },
+        { name: 'Средний', code: 'middle' },
+        { name: 'Высокий', code: 'high' },
+    ]);
+
 
     const addNewSkill = async (): Promise<void> => {
         loading.value = true
 
-         if (!skillSection.value) {
+        if (!skillSection.value) {
             loading.value = false
             return
         } 
+
+         // Если priority не выбран, устанавливаем значение по умолчанию
+        // if (!skillPrioritys.value) {
+        //     skillPrioritys.value = priorites.value[0]
+        // }
+
+        //проверка на undefined
+        const defaultPriority = { name: 'Низкий', code: 'low' } as const;
+
         
         const newObj: ISkills ={
             id: `${Date.now()}-${Math.floor(Math.random() * 1000)}`,
             skillName: skillName.value,
             skillSection: skillSection.value,
             skillDescription: skillDescription.value,
-            skillPrioritys: skillPrioritys.value,
+            skillPrioritys: skillPrioritys.value || priorites.value[0] || defaultPriority,
             createdAt: new Date()
         }
 
@@ -63,23 +96,6 @@
 
 </script>
 
-<template>
-    <div class="skills__wrap">
-        <app-card class="skills__card">
-            <template #title>Новый элемент</template>
-            <template #content >
-                <div class="card-content">
-                    <app-inputtext placeholder="название" v-model="skillName" class="skills__input"/>
-                    <app-select placeholder="раздел" v-model="skillSection" :options="sections" optionLabel="name" class="skills__input"/>
-                    <app-textarea placeholder="описание" v-model="skillDescription" rows="5" cols="30" class="skills__input"/>
-                    <app-inputtext placeholder="приоритет" v-model="skillPrioritys" class="skills__input"/>
-                    <app-button @click="addNewSkill" label="Создать" :disabled="disabledSaveButton" :loading="loading"></app-button>
-                </div>
-            </template>
-        </app-card>
-
-    </div>
-</template>
 
 
 <style scoped>
