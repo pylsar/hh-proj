@@ -19,6 +19,7 @@ export const useListingStore = defineStore('listing', () => {
     { name: 'Книги', code: 'books' },
     { name: 'Игры', code: 'games' },
     { name: 'Спорт', code: 'sports' },
+    { name: 'АйТи', code: 'it' },
     { name: 'Разное', code: 'dif' }
   ])
 
