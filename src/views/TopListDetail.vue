@@ -2,5 +2,5 @@
 </script>
 
 <template>
-    PageInterview
+    Детальная страница
 </template>

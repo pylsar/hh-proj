@@ -36,6 +36,12 @@
                     path: '/statistic',
                     show: true
                 },
+                {
+                    label: 'Топы',
+                    icon: 'pi pi-list',
+                    path: '/toplist',
+                    show: true
+                },
             ]
         } else {
             return [

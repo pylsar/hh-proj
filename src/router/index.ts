@@ -29,9 +29,9 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/PageAuth.vue'),
   },
   {
-    path: '/interview/:id',
-    name: 'Interview',
-    component: () => import('@/views/PageInterview.vue'),
+    path: '/toplist/:id',
+    name: 'TopListDetail',
+    component: () => import('@/views/TopListDetail.vue'),
     beforeEnter : checkAuth
   },
   {
@@ -44,6 +44,12 @@ const routes: RouteRecordRaw[] = [
     path: '/statistic',
     name: 'Statistic',
     component: () => import('@/views/PageStatistic.vue'),
+    beforeEnter : checkAuth
+  },
+   {
+    path: '/toplist',
+    name: 'TopList',
+    component: () => import('@/views/TopList.vue'),
     beforeEnter : checkAuth
   }
 ]
