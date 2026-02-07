@@ -32,6 +32,7 @@ const routes: RouteRecordRaw[] = [
     path: '/toplist/:id',
     name: 'TopListDetail',
     component: () => import('@/views/TopListDetail.vue'),
+    // props: true,
     beforeEnter : checkAuth
   },
   {

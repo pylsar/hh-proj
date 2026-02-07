@@ -3,14 +3,14 @@
     <h1>Топы</h1>
     <div class="toplist__items">
       <div 
-        v-for="item in items" 
-        :key="item.id"
+        v-for="book in books" 
+        :key="book.id"
         class="toplist__item"
-        @click="goToDetail(item.id)"
+        @click="goToDetail(book.id)"
       >
         <div class="toplist__item-content">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
+            <h3>{{ book.name }}</h3>
+            <p>{{ book.description }}</p>
         </div>
       </div>
     </div>
@@ -21,13 +21,12 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
+import bbcData from '../assets/db/bbcTop.json'
+
 const router = useRouter()
 
-const items = ref([
-  { id: 1, rank: 1, title: 'Элемент 1', description: 'Описание 1' },
-  { id: 2, rank: 2, title: 'Элемент 2', description: 'Описание 2' },
-  { id: 3, rank: 3, title: 'Элемент 3', description: 'Описание 3' },
-])
+
+const books = ref(bbcData.bbcTop)
 
 
 // Навигация к детальной странице
