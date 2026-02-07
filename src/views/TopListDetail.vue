@@ -11,15 +11,16 @@
 
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import booksData from '../assets/db/bbcTop.json'
+import booksData from '@/assets/db/bbcTop.json'
+import type {BookBbc} from '@/interfaces'
 
 // Получаем текущий маршрут
 const route = useRoute()
 const router = useRouter()
-const book = ref(null)
+const book = ref<BookBbc | null>(null)
 
 // Получаем id из параметров маршрута
-const bookId = parseInt(route.params.id)
+const bookId = parseInt(route.params.id as string)
 
 onMounted(() => {
   // Ищем книгу в данных по id
@@ -32,7 +33,7 @@ onMounted(() => {
   }
 })
 
-const goBack = () => {
+const goBack = (): void => {
   router.push('/toplist')
 }
 </script>
