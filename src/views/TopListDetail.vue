@@ -3,7 +3,8 @@
 <template>
      <div class="detail__box" v-if="book">
         {{ book }}
-    <button @click="goBack" class="back-btn">← Назад</button>
+    <app-button @click="goBack" label="← Назад" severity="success" />
+    
     </div>
 </template>
 
@@ -20,13 +21,11 @@ const route = useRoute()
 const router = useRouter()
 const book = ref<BookBbc | null>(null)
 
-
-
-  // Объединяем все книги из обоих источников
-  const allBooks: BookBbc[] = [
-    ...bbcData.bbcTop,
-    ...newYorkTimesData.NewYorkTimes
-  ]
+// Объединяем все книги из обоих источников
+const allBooks: BookBbc[] = [
+  ...bbcData.bbcTop,
+  ...newYorkTimesData.NewYorkTimes
+]
 
 onMounted(() => {
   // Получаем id из параметров маршрута

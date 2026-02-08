@@ -55,9 +55,9 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-import bbcData from '../assets/db/bbcTop.json'
-import newYorkTimesData from '../assets/db/newYorkTimes.json'
-import type {BookBbc} from '@/interfaces'
+import bbcData from '@/assets/db/bbcTop.json'
+import newYorkTimesData from '@/assets/db/newYorkTimes.json'
+// import type {BookBbc} from '@/interfaces'
 
 const router = useRouter()
 const activeTab = ref<string>('0')
