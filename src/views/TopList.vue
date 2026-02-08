@@ -75,7 +75,7 @@ const tabs = ref([
     },
 ])
 
-const goToDetail = (id: number): void => {
+const goToDetail = (id: number | string): void => {
   router.push(`/toplist/${id}`)
 }
 </script>
