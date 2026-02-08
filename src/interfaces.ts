@@ -10,7 +10,7 @@ export interface ISkills{
 
 // книги bbcTop
 export interface BookBbc {
-  id: number
+  id: number | string
   name: string
   desc: string
   author: string

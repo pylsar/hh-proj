@@ -23,6 +23,11 @@ import ConfirmationService from 'primevue/confirmationservice';
 import Dialog from 'primevue/dialog';
 import Select from 'primevue/select';
 import Textarea from 'primevue/textarea';
+import Tabs from 'primevue/tabs';
+import TabList from 'primevue/tablist';
+import Tab from 'primevue/tab';
+import TabPanels from 'primevue/tabpanels';
+import TabPanel from 'primevue/tabpanel';
  
 
 import App from './App.vue'
@@ -65,6 +70,13 @@ app.component('app-confirmdialog', ConfirmDialog)
 app.component('app-dialog', Dialog)
 app.component('app-select', Select)
 app.component('app-textarea', Textarea)
+app.component('app-tabs', Tabs)
+app.component('app-tablist', TabList)
+app.component('app-tab', Tab)
+app.component('app-tabPanels', TabPanels)
+app.component('app-tabPanel', TabPanel)
+
+
 
 
 
