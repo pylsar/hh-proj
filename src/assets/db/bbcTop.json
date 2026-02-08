@@ -9,7 +9,7 @@
       "src": "",
       "year": "1954",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_read": true,
       "series": true,
       "people": ["Кристофер Ли", "Джордж Мартин", "Дж.К. Роулинг"],
       "in_rus": true
@@ -51,7 +51,7 @@
       "src": "",
       "year": "1960",
       "likes": ["США", "Великобритания", "Канада"],
-      "is_read": false,
+      "is_read": true,
       "series": false,
       "people": ["Опра Уинфри", "Барак Обама", "Том Хэнкс"],
       "in_rus": true
@@ -65,7 +65,7 @@
       "src": "",
       "year": "1997",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_read": true,
       "series": true,
       "people": ["Дэниел Рэдклифф", "Эмма Уотсон", "Стивен Кинг"],
       "in_rus": true

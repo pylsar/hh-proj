@@ -1,6 +1,9 @@
 <template>
   <div class="toplist__box">
     <h1>Топы</h1>
+    <div class="toplist__head">
+
+    </div>
     <div class="toplist__items">
       <div 
         v-for="book in books" 
@@ -8,9 +11,23 @@
         class="toplist__item"
         @click="goToDetail(book.id)"
       >
-        <div class="toplist__item-content">
-            <h3>{{ book.name }}</h3>
-        </div>
+        <ul class="toplist__item-content">
+          <li>
+            <span>
+
+             <i :class="{
+                'pi pi-check': book.is_read ,
+                'pi pi-times': !book.is_read 
+              }" 
+              :style="{
+                color: book.is_read ? 'green' : 'red',
+              }"
+            ></i>
+            </span>
+            <span>{{ book.id }}</span>
+            <span>{{ book.name }}</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
