@@ -21,14 +21,14 @@
         >
           <div v-if="activeTab === tab.value" class="toplist__items">
             <div 
-              v-for="item in tab.data" 
+              v-for="(item, index) in tab.data" 
               :key="item.id"
               class="toplist__item"
               @click="goToDetail(item.id)"
             >
               <ul class="toplist__item-content">
                 <li>
-                  <span>{{ item.id }}</span>
+                  <span>{{ index + 1}}</span>
                   <span>
                     <i 
                       :class="{
