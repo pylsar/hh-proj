@@ -76,16 +76,16 @@ const goToDetail = (id: number | string): void => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .toplist__item-content {
   list-style-type: none;
-}
-
-.toplist__item-content li {
-  display: flex;
-  gap: 8px;
-}
-.toplist__item-content li span {
-  min-width: 20px;
+  & li {
+    display: flex;
+    gap: 8px;
+    & span {
+      min-width: 20px;
+      color: vars.$colorMain;
+    }
+  }
 }
 </style>

@@ -1,23 +1,23 @@
-import './assets/main.css'
-import Aura from '@primeuix/themes/aura'
-import 'primeicons/primeicons.css'
+import './assets/main.css';
+import Aura from '@primeuix/themes/aura';
+import 'primeicons/primeicons.css';
+// import './styles/variables.scss';
 
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import PrimeVue from 'primevue/config'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import PrimeVue from 'primevue/config';
 
-
-import Menubar from 'primevue/menubar'
-import Button from 'primevue/button'
-import Inputtext from 'primevue/inputtext'
-import ToastService from 'primevue/toastservice'
-import Toast from 'primevue/toast'
-import ProgressSpinner from 'primevue/progressspinner'
-import Card from 'primevue/card'
-import DataTable from 'primevue/datatable'
-import Column from 'primevue/column'
+import Menubar from 'primevue/menubar';
+import Button from 'primevue/button';
+import Inputtext from 'primevue/inputtext';
+import ToastService from 'primevue/toastservice';
+import Toast from 'primevue/toast';
+import ProgressSpinner from 'primevue/progressspinner';
+import Card from 'primevue/card';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
 import ConfirmDialog from 'primevue/confirmdialog';
 import ConfirmationService from 'primevue/confirmationservice';
 import Dialog from 'primevue/dialog';
@@ -28,12 +28,9 @@ import TabList from 'primevue/tablist';
 import Tab from 'primevue/tab';
 import TabPanels from 'primevue/tabpanels';
 import TabPanel from 'primevue/tabpanel';
- 
 
-import App from './App.vue'
-import router from './router'
-
-
+import App from './App.vue';
+import router from './router';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -41,43 +38,39 @@ const firebaseConfig = {
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 initializeApp(firebaseConfig);
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(ToastService)
-app.use(ConfirmationService)
-app.use(createPinia())
-app.use(router)
+app.use(ToastService);
+app.use(ConfirmationService);
+app.use(createPinia());
+app.use(router);
 app.use(PrimeVue, {
-    theme: {
-        preset: Aura
-    }
-})
+  theme: {
+    preset: Aura,
+  },
+});
 
-app.component('app-menubar', Menubar)
-app.component('app-button', Button)
-app.component('app-inputtext', Inputtext)
-app.component('app-toast', Toast)
-app.component('app-progressspiner', ProgressSpinner)
-app.component('app-card', Card)
-app.component('app-datatable', DataTable)
-app.component('app-column', Column)
-app.component('app-confirmdialog', ConfirmDialog)
-app.component('app-dialog', Dialog)
-app.component('app-select', Select)
-app.component('app-textarea', Textarea)
-app.component('app-tabs', Tabs)
-app.component('app-tablist', TabList)
-app.component('app-tab', Tab)
-app.component('app-tabPanels', TabPanels)
-app.component('app-tabPanel', TabPanel)
+app.component('app-menubar', Menubar);
+app.component('app-button', Button);
+app.component('app-inputtext', Inputtext);
+app.component('app-toast', Toast);
+app.component('app-progressspiner', ProgressSpinner);
+app.component('app-card', Card);
+app.component('app-datatable', DataTable);
+app.component('app-column', Column);
+app.component('app-confirmdialog', ConfirmDialog);
+app.component('app-dialog', Dialog);
+app.component('app-select', Select);
+app.component('app-textarea', Textarea);
+app.component('app-tabs', Tabs);
+app.component('app-tablist', TabList);
+app.component('app-tab', Tab);
+app.component('app-tabPanels', TabPanels);
+app.component('app-tabPanel', TabPanel);
 
-
-
-
-
-app.mount('#app')
+app.mount('#app');
