@@ -84,7 +84,7 @@ const goToDetail = (id: number | string): void => {
     gap: 8px;
     & span {
       min-width: 20px;
-      color: vars.$colorMain;
+      color: vars.$colorWhite;
     }
   }
 }
