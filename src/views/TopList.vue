@@ -53,6 +53,7 @@ import { useRouter } from 'vue-router';
 
 import bbcData from '@/assets/db/bbcTop.json';
 import newYorkTimesData from '@/assets/db/newYorkTimes.json';
+import gameAwwardsData from '@/assets/db/gameAwwards.json';
 // import type {BookBbc} from '@/interfaces'
 
 const router = useRouter();
@@ -68,6 +69,11 @@ const tabs = ref([
     title: 'New York Times 100',
     value: '1',
     data: newYorkTimesData.NewYorkTimes,
+  },
+  {
+    title: 'The Game Awwards',
+    value: '2',
+    data: gameAwwardsData.gameAwwards,
   },
 ]);
 
