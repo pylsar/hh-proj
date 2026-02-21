@@ -1,18 +1,16 @@
 <template>
-  <div style="height: 400px; width: 600px; margin: 0 auto">
-    <Pie
-      v-if="chartData && chartData.labels.length"
-      :data="chartData"
-      :options="chartOptions"
-    />
+  <div class="charts-box">
+    <Pie v-if="hasChartData" :data="chartDataNonNull" :options="chartOptions" />
     <p v-else>Загрузка данных...</p>
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue';
+<script setup lang="ts">
+import { ref, onMounted, computed } from 'vue';
 import { Pie } from 'vue-chartjs';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from 'chart.js';
+import type { ChartData, ChartOptions } from 'chart.js';
+import type { BookBbc } from '@/interfaces';
 
 import bbcData from '@/assets/db/bbcTop.json';
 
@@ -20,8 +18,10 @@ import bbcData from '@/assets/db/bbcTop.json';
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
 
 // Реактивные переменные для данных и опций диаграммы
-const chartData = ref(null);
-const chartOptions = ref({
+
+type PieChartData = ChartData<'pie', number[], string | string[]>;
+const chartData = ref<PieChartData | null>(null);
+const chartOptions = ref<ChartOptions<'pie'>>({
   responsive: true,
   maintainAspectRatio: false,
   plugins: {
@@ -37,7 +37,7 @@ const chartOptions = ref({
         // Кастомный текст для всплывающей подсказки с процентами
         label: (context) => {
           const label = context.label || '';
-          const value = context.raw || 0;
+          const value = Number(context.raw) || 0;
           const total = context.dataset.data.reduce((a, b) => a + b, 0);
           const percentage = ((value / total) * 100).toFixed(1);
           return `${label}: ${value} (${percentage}%)`;
@@ -47,14 +47,41 @@ const chartOptions = ref({
   },
 });
 
-const getData = () => {
+const hasChartData = computed(() => {
+  return (
+    chartData.value !== null &&
+    chartData.value.labels !== undefined &&
+    chartData.value.labels.length > 0
+  );
+});
+
+const chartDataNonNull = computed<PieChartData>(() => {
+  // Если данных нет, возвращаем пустую структуру
+  return (
+    chartData.value || {
+      labels: [],
+      datasets: [
+        {
+          data: [],
+          backgroundColor: [],
+          borderWidth: 1,
+        },
+      ],
+    }
+  );
+});
+
+const getData = (): void => {
   // Получаем массив книг из поля bbcTop
-  const books = bbcData.bbcTop;
-  console.log('books', books);
+  const books: BookBbc[] = bbcData.bbcTop;
 
   // Подсчитываем количество прочитанных и непрочитанных книг
-  const readCount = books.filter((book) => book.is_read === true).length;
-  const unreadCount = books.filter((book) => book.is_read === false).length;
+  const readCount: number = books.filter(
+    (book) => book.is_read === true
+  ).length;
+  const unreadCount: number = books.filter(
+    (book) => book.is_read === false
+  ).length;
 
   // Формируем данные для диаграммы
   chartData.value = {
@@ -69,7 +96,17 @@ const getData = () => {
   };
 };
 
-onMounted(() => {
+onMounted((): void => {
   getData();
 });
 </script>
+
+<style lang="scss">
+.charts-box {
+  width: 40vw;
+  height: 40vh;
+  max-height: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+</style>
