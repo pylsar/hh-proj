@@ -9,7 +9,7 @@
       "src": "",
       "year": "1954-1955",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Кристофер Ли", "Джордж Мартин", "Дж.К. Роулинг"],
       "in_rus": true
@@ -23,7 +23,7 @@
       "src": "",
       "year": "1813",
       "likes": ["Великобритания", "США", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Хелен Филдинг", "Кейт Миддлтон", "Колин Ферт"],
       "in_rus": true
@@ -37,7 +37,7 @@
       "src": "",
       "year": "1995-2000",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг", "Кристоф Нолан"],
       "in_rus": true
@@ -51,7 +51,7 @@
       "src": "",
       "year": "1979",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Стивен Фрай", "Нил Гейман", "Илон Маск"],
       "in_rus": true
@@ -65,7 +65,7 @@
       "src": "",
       "year": "2000",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Дэниел Рэдклифф", "Эмма Уотсон", "Стивен Кинг"],
       "in_rus": true
@@ -79,7 +79,7 @@
       "src": "",
       "year": "1960",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Опра Уинфри", "Барак Обама", "Том Хэнкс"],
       "in_rus": true
@@ -93,7 +93,7 @@
       "src": "",
       "year": "1926",
       "likes": ["Великобритания", "США", "Канада", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Кристофер Робин", "Дж.К. Роулинг", "Стивен Фрай"],
       "in_rus": true
@@ -107,7 +107,7 @@
       "src": "",
       "year": "1949",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Маргарет Этвуд", "Дэвид Боуи", "Стив Джобс"],
       "in_rus": true
@@ -121,7 +121,7 @@
       "src": "",
       "year": "1950",
       "likes": ["Великобритания", "США", "Польша", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Дж.К. Роулинг", "Джон Леннон", "Бенедикт Камбербэтч"],
       "in_rus": true
@@ -135,7 +135,7 @@
       "src": "",
       "year": "1847",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Королева Виктория", "Вирджиния Вулф", "Маргарет Этвуд"],
       "in_rus": true
@@ -149,7 +149,7 @@
       "src": "",
       "year": "1961",
       "likes": ["США", "Великобритания", "Израиль", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэвид Боуи", "Кристофер Нолан", "Вуди Аллен"],
       "in_rus": true
@@ -163,7 +163,7 @@
       "src": "",
       "year": "1847",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Кейт Буш", "Сильвия Плат", "Питер Уир"],
       "in_rus": true
@@ -177,7 +177,7 @@
       "src": "",
       "year": "1993",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -191,7 +191,7 @@
       "src": "",
       "year": "1938",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Альфред Хичкок", "Лоуренс Оливье", "Джоан Фонтейн"],
       "in_rus": true
@@ -205,7 +205,7 @@
       "src": "",
       "year": "1951",
       "likes": ["США", "Великобритания", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джон Леннон", "Билл Гейтс", "Стивен Кинг"],
       "in_rus": true
@@ -219,7 +219,7 @@
       "src": "",
       "year": "1908",
       "likes": ["Великобритания", "США", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["А.А. Милн", "Теодор Рузвельт", "Алан Александер Милн"],
       "in_rus": true
@@ -233,7 +233,7 @@
       "src": "",
       "year": "1861",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Кейт Уинслет", "Гильермо дель Торо", "Стивен Фрай"],
       "in_rus": true
@@ -247,7 +247,7 @@
       "src": "",
       "year": "1868",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Симон де Бовуар", "Джоан Роулинг", "Грета Гарвиг"],
       "in_rus": true
@@ -261,7 +261,7 @@
       "src": "",
       "year": "1994",
       "likes": ["Великобритания", "Греция", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Николас Кейдж", "Пенелопа Крус", "Джон Херт"],
       "in_rus": true
@@ -275,7 +275,7 @@
       "src": "",
       "year": "1869",
       "likes": ["Россия", "США", "Великобритания", "Франция"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Эрнест Хемингуэй", "Вирджиния Вулф", "Джеймс Джойс"],
       "in_rus": true
@@ -289,7 +289,7 @@
       "src": "",
       "year": "1936",
       "likes": ["США", "Великобритания", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Вивьен Ли", "Кларк Гейбл", "Опра Уинфри"],
       "in_rus": true
@@ -303,7 +303,7 @@
       "src": "",
       "year": "1997",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Дэниел Рэдклифф", "Эмма Уотсон", "Стивен Кинг"],
       "in_rus": true
@@ -317,7 +317,7 @@
       "src": "",
       "year": "1998",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Дэниел Рэдклифф", "Эмма Уотсон", "Стивен Кинг"],
       "in_rus": true
@@ -331,7 +331,7 @@
       "src": "",
       "year": "1999",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Дэниел Рэдклифф", "Эмма Уотсон", "Стивен Кинг"],
       "in_rus": true
@@ -345,7 +345,7 @@
       "src": "",
       "year": "1937",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Питер Джексон", "Дж.К. Роулинг", "Кристофер Ли"],
       "in_rus": true
@@ -359,7 +359,7 @@
       "src": "",
       "year": "1891",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Д.Г. Лоуренс", "Вирджиния Вулф", "Роман Полански"],
       "in_rus": true
@@ -373,7 +373,7 @@
       "src": "",
       "year": "1871",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Эмили Дикинсон", "Вирджиния Вулф", "Мартин Эмис"],
       "in_rus": true
@@ -387,7 +387,7 @@
       "src": "",
       "year": "1989",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Майкл Кейн", "Робин Уильямс", "Джон Кьюсак"],
       "in_rus": true
@@ -401,7 +401,7 @@
       "src": "",
       "year": "1939",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Боб Дилан", "Брюс Спрингстин", "Опра Уинфри"],
       "in_rus": true
@@ -415,7 +415,7 @@
       "src": "",
       "year": "1865",
       "likes": ["Великобритания", "США", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Королева Виктория", "Сальвадор Дали", "Джон Леннон"],
       "in_rus": true
@@ -429,7 +429,7 @@
       "src": "",
       "year": "1991",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": false
@@ -443,7 +443,7 @@
       "src": "",
       "year": "1967",
       "likes": ["Латинская Америка", "США", "Испания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Билл Клинтон", "Опра Уинфри"],
       "in_rus": true
@@ -457,7 +457,7 @@
       "src": "",
       "year": "1989",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Эдди Редмэйн", "Иэн Макшейн", "Мэттью Макфэдьен"],
       "in_rus": true
@@ -471,7 +471,7 @@
       "src": "",
       "year": "1850",
       "likes": ["Великобритания", "США", "Индия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Фёдор Достоевский", "Зигмунд Фрейд", "Джон Ирвинг"],
       "in_rus": true
@@ -485,7 +485,7 @@
       "src": "",
       "year": "1964",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джонни Депп", "Тим Бёртон", "Стивен Спилберг"],
       "in_rus": true
@@ -499,7 +499,7 @@
       "src": "",
       "year": "1883",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Хорхе Луис Борхес", "Эрнест Хемингуэй", "Джон Гришем"],
       "in_rus": true
@@ -513,7 +513,7 @@
       "src": "",
       "year": "1950",
       "likes": ["Австралия", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -527,7 +527,7 @@
       "src": "",
       "year": "1817",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -541,7 +541,7 @@
       "src": "",
       "year": "1965",
       "likes": ["США", "Великобритания", "Германия", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": true,
       "people": ["Дэвид Линч", "Дени Вильнёв", "Джордж Лукас"],
       "in_rus": true
@@ -555,7 +555,7 @@
       "src": "",
       "year": "1815",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Гвинет Пэлтроу", "Джереми Нортэм", "Тони Коллетт"],
       "in_rus": true
@@ -569,7 +569,7 @@
       "src": "",
       "year": "1908",
       "likes": ["Канада", "США", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Меган Фоллоуз", "Эмибет Макналли", "Сара Полли"],
       "in_rus": true
@@ -583,7 +583,7 @@
       "src": "",
       "year": "1972",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Мартин Розен", "Джон Херт", "Ральф Коссет"],
       "in_rus": true
@@ -597,7 +597,7 @@
       "src": "",
       "year": "1925",
       "likes": ["США", "Великобритания", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Джей-Зи", "Баз Лурман"],
       "in_rus": true
@@ -611,7 +611,7 @@
       "src": "",
       "year": "1844",
       "likes": ["Франция", "США", "Россия", "Италия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Альфред Хичкок", "Генри Миллер", "Умберто Эко"],
       "in_rus": true
@@ -625,7 +625,7 @@
       "src": "",
       "year": "1945",
       "likes": ["Великобритания", "США", "Ирландия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Грэм Грин", "Джон Гилгуд", "Колин Ферт"],
       "in_rus": true
@@ -639,7 +639,7 @@
       "src": "",
       "year": "1945",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Маргарет Тэтчер", "Барак Обама", "Дэвид Боуи"],
       "in_rus": true
@@ -653,7 +653,7 @@
       "src": "",
       "year": "1843",
       "likes": ["Великобритания", "США", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джим Керри", "Билл Мюррей", "Майкл Кейн"],
       "in_rus": true
@@ -667,7 +667,7 @@
       "src": "",
       "year": "1874",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Кэри Маллиган", "Мэттью Макфэдьен", "Том Стёрридж"],
       "in_rus": true
@@ -681,7 +681,7 @@
       "src": "",
       "year": "1981",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джон Торн", "Ник Робинсон", "Эннке Блосфельд"],
       "in_rus": true
@@ -695,7 +695,7 @@
       "src": "",
       "year": "1995",
       "likes": ["Великобритания", "Германия", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -709,7 +709,7 @@
       "src": "",
       "year": "1911",
       "likes": ["Великобритания", "США", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Агнес Мурхед", "Маргарет О'Брайен", "Кейт Маберли"],
       "in_rus": true
@@ -723,7 +723,7 @@
       "src": "",
       "year": "1937",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Боб Дилан", "Брюс Спрингстин", "Опра Уинфри"],
       "in_rus": true
@@ -737,7 +737,7 @@
       "src": "",
       "year": "1978",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Мик Джаггер", "Роб Лоу", "Молли Рингуолд"],
       "in_rus": true
@@ -751,7 +751,7 @@
       "src": "",
       "year": "1877",
       "likes": ["Россия", "США", "Великобритания", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Владимир Набоков", "Джеймс Джойс", "Эрнест Хемингуэй"],
       "in_rus": true
@@ -765,7 +765,7 @@
       "src": "",
       "year": "1993",
       "likes": ["Индия", "Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Салман Рушди", "Амитав Гхош", "Арундати Рой"],
       "in_rus": true
@@ -779,7 +779,7 @@
       "src": "",
       "year": "1982",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Спилберг", "Марк Райлэнс", "Руби Барнхилл"],
       "in_rus": true
@@ -793,7 +793,7 @@
       "src": "",
       "year": "1930",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -807,7 +807,7 @@
       "src": "",
       "year": "1877",
       "likes": ["Великобритания", "США", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Элизабет Тейлор", "Шон Бин", "Дэвид Тьюлис"],
       "in_rus": true
@@ -821,7 +821,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Ирландия", "США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Джуд Лоу", "Хоуп Дэвис", "Джош Хатчерсон"],
       "in_rus": true
@@ -835,7 +835,7 @@
       "src": "",
       "year": "1866",
       "likes": ["Россия", "США", "Германия", "Франция"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Фридрих Ницше", "Зигмунд Фрейд", "Альберт Эйнштейн"],
       "in_rus": true
@@ -849,7 +849,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": false
@@ -863,7 +863,7 @@
       "src": "",
       "year": "1997",
       "likes": ["США", "Япония", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Роб Маршалл", "Чжан Цзыи", "Гун Ли"],
       "in_rus": true
@@ -877,7 +877,7 @@
       "src": "",
       "year": "1859",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Рональд Колман", "Дирк Богард", "Крис Сарандон"],
       "in_rus": true
@@ -891,7 +891,7 @@
       "src": "",
       "year": "1977",
       "likes": ["Австралия", "США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Ричард Чемберлен", "Барбара Стрейзанд", "Опра Уинфри"],
       "in_rus": true
@@ -905,7 +905,7 @@
       "src": "",
       "year": "1987",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг", "Джордж Мартин"],
       "in_rus": true
@@ -919,7 +919,7 @@
       "src": "",
       "year": "1943",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -933,7 +933,7 @@
       "src": "",
       "year": "1965",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Майкл Кейн", "Энтони Куинн", "Кэндис Берген"],
       "in_rus": true
@@ -947,7 +947,7 @@
       "src": "",
       "year": "1990",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Майкл Шин", "Дэвид Теннант", "Фрэнсис МакДорманд"],
       "in_rus": true
@@ -961,7 +961,7 @@
       "src": "",
       "year": "1989",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг", "Джордж Мартин"],
       "in_rus": true
@@ -975,7 +975,7 @@
       "src": "",
       "year": "1954",
       "likes": ["Великобритания", "США", "Канада", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Стивен Кинг", "Дж.К. Роулинг", "Маргарет Этвуд"],
       "in_rus": true
@@ -989,7 +989,7 @@
       "src": "",
       "year": "1985",
       "likes": ["Германия", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Том Тиквер", "Дастин Хоффман", "Алан Рикман"],
       "in_rus": true
@@ -1003,7 +1003,7 @@
       "src": "",
       "year": "1914",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1017,7 +1017,7 @@
       "src": "",
       "year": "2002",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг"],
       "in_rus": true
@@ -1031,7 +1031,7 @@
       "src": "",
       "year": "1988",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэнни ДеВито", "Мара Уилсон", "Эмбает Дэвидц"],
       "in_rus": true
@@ -1045,7 +1045,7 @@
       "src": "",
       "year": "1996",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Рене Зеллвегер", "Хью Грант", "Колин Ферт"],
       "in_rus": true
@@ -1059,7 +1059,7 @@
       "src": "",
       "year": "1992",
       "likes": ["США", "Великобритания", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Брет Истон Эллис", "Джей МакИнерни", "Татьяна Толстая"],
       "in_rus": true
@@ -1073,7 +1073,7 @@
       "src": "",
       "year": "1859",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Чарльз Диккенс", "Агата Кристи", "Дороти Сэйерс"],
       "in_rus": true
@@ -1087,7 +1087,7 @@
       "src": "",
       "year": "1922",
       "likes": ["Ирландия", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Вирджиния Вулф", "Т.С. Элиот", "Сэмюэль Беккет"],
       "in_rus": true
@@ -1101,7 +1101,7 @@
       "src": "",
       "year": "1853",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джон Гилгуд", "Дайана Ригг", "Дени Лоу"],
       "in_rus": true
@@ -1115,7 +1115,7 @@
       "src": "",
       "year": "1991",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1129,7 +1129,7 @@
       "src": "",
       "year": "1980",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1143,7 +1143,7 @@
       "src": "",
       "year": "1949",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Тара Фицджеральд", "Роуз Бирн", "Билл Найи"],
       "in_rus": true
@@ -1157,7 +1157,7 @@
       "src": "",
       "year": "1998",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Шиа ЛаБаф", "Сигурни Уивер", "Джон Войт"],
       "in_rus": true
@@ -1171,7 +1171,7 @@
       "src": "",
       "year": "1950",
       "likes": ["Великобритания", "США", "Австралия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Майкл Муркок", "Нил Гейман", "Терри Пратчетт"],
       "in_rus": true
@@ -1185,7 +1185,7 @@
       "src": "",
       "year": "1997",
       "likes": ["Индия", "Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Салман Рушди", "В.С. Найпол", "Джумпa Лахири"],
       "in_rus": true
@@ -1199,7 +1199,7 @@
       "src": "",
       "year": "2000",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1213,7 +1213,7 @@
       "src": "",
       "year": "1932",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джордж Оруэлл", "Рэй Брэдбери", "Дэвид Боуи"],
       "in_rus": true
@@ -1227,7 +1227,7 @@
       "src": "",
       "year": "1932",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1241,7 +1241,7 @@
       "src": "",
       "year": "1982",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Джордж Мартин", "Терри Брукс", "Дэвид Эддингс"],
       "in_rus": true
@@ -1255,7 +1255,7 @@
       "src": "",
       "year": "1957",
       "likes": ["США", "Франция", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Боб Дилан", "Джим Моррисон", "Хантер Томпсон"],
       "in_rus": true
@@ -1269,7 +1269,7 @@
       "src": "",
       "year": "1969",
       "likes": ["США", "Италия", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Фрэнсис Форд Коппола", "Аль Пачино", "Марлон Брандо"],
       "in_rus": true
@@ -1283,7 +1283,7 @@
       "src": "",
       "year": "1980",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Дэрил Ханна", "Памела Рид", "Джеймс Ремар"],
       "in_rus": true
@@ -1297,7 +1297,7 @@
       "src": "",
       "year": "1983",
       "likes": ["Великобритания", "США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг", "Джордж Мартин"],
       "in_rus": true
@@ -1311,7 +1311,7 @@
       "src": "",
       "year": "1988",
       "likes": ["Бразилия", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Мэдонна", "Джулия Робертс", "Уилл Смит"],
       "in_rus": true
@@ -1325,7 +1325,7 @@
       "src": "",
       "year": "1954",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Филиппа Грегори", "Элисон Уэйр"],
       "in_rus": false
@@ -1339,7 +1339,7 @@
       "src": "",
       "year": "1979",
       "likes": ["Великобритания", "США", "Индия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Билл Клинтон", "Маргарет Тэтчер"],
       "in_rus": true
@@ -1353,7 +1353,7 @@
       "src": "",
       "year": "1985",
       "likes": ["Латинская Америка", "США", "Испания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Опра Уинфри", "Хавьер Бардем"],
       "in_rus": true
@@ -1367,7 +1367,7 @@
       "src": "",
       "year": "2002",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1381,7 +1381,7 @@
       "src": "",
       "year": "2000",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Энн Хэтэуэй", "Джули Эндрюс", "Хизер Матараццо"],
       "in_rus": true
@@ -1395,7 +1395,7 @@
       "src": "",
       "year": "1981",
       "likes": ["Индия", "Великобритания", "США", "Канада"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Габриэль Гарсиа Маркес", "Арундати Рой", "Камала Харрис"],
       "in_rus": true
@@ -1409,7 +1409,7 @@
       "src": "",
       "year": "1889",
       "likes": ["Великобритания", "Россия", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Фрай", "Хью Лори", "Джон Клиз"],
       "in_rus": true
@@ -1423,7 +1423,7 @@
       "src": "",
       "year": "1992",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Джордж Мартин"],
       "in_rus": true
@@ -1437,7 +1437,7 @@
       "src": "",
       "year": "1996",
       "likes": ["Великобритания", "США", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Дэнни Бойл", "Тильда Суинтон"],
       "in_rus": true
@@ -1451,7 +1451,7 @@
       "src": "",
       "year": "1897",
       "likes": ["Великобритания", "США", "Румыния", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Кристофер Ли", "Гэри Олдман", "Фрэнсис Форд Коппола"],
       "in_rus": true
@@ -1465,7 +1465,7 @@
       "src": "",
       "year": "2005",
       "likes": ["Великобритания", "Германия", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Фрай", "Роуэн Аткинсон"],
       "in_rus": true
@@ -1479,7 +1479,7 @@
       "src": "",
       "year": "1837",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Владимир Набоков", "Гилберт Кит Честертон", "Джон Голсуорси"],
       "in_rus": true
@@ -1493,7 +1493,7 @@
       "src": "",
       "year": "2005",
       "likes": ["Великобритания", "США", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Стэнли Туцци", "Иэн Маккеллен"],
       "in_rus": true
@@ -1507,7 +1507,7 @@
       "src": "",
       "year": "1984",
       "likes": ["Великобритания", "США", "Канада"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэвид Боуи", "Ирвин Уэлш", "Уилл Селф"],
       "in_rus": true
@@ -1521,7 +1521,7 @@
       "src": "",
       "year": "1971",
       "likes": ["Великобритания", "Франция", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Фред Зиннеман", "Эдвард Фокс", "Мишель Лонсдаль"],
       "in_rus": true
@@ -1535,7 +1535,7 @@
       "src": "",
       "year": "2000",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1549,7 +1549,7 @@
       "src": "",
       "year": "1895",
       "likes": ["Великобритания", "США", "Индия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Д. Г. Лоуренс", "Вирджиния Вулф", "Кейт Уинслет"],
       "in_rus": true
@@ -1563,7 +1563,7 @@
       "src": "",
       "year": "1982",
       "likes": ["Великобритания", "Австралия", "Канада"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Стивен Фрай", "Хью Лори", "Джон Клиз"],
       "in_rus": true
@@ -1577,7 +1577,7 @@
       "src": "",
       "year": "1951",
       "likes": ["Великобритания", "Канада", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Уинстон Черчилль", "Том Хэнкс", "Джек Хокинс"],
       "in_rus": true
@@ -1591,7 +1591,7 @@
       "src": "",
       "year": "1862",
       "likes": ["Франция", "США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Лев Толстой", "Фёдор Достоевский", "Клод-Мишель Шёнберг"],
       "in_rus": true
@@ -1605,7 +1605,7 @@
       "src": "",
       "year": "1886",
       "likes": ["Великобритания", "США", "Индия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Алан Бейтс", "Джанет Сазман", "Джон Шлезингер"],
       "in_rus": true
@@ -1619,7 +1619,7 @@
       "src": "",
       "year": "1996",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1633,7 +1633,7 @@
       "src": "",
       "year": "1996",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1647,7 +1647,7 @@
       "src": "",
       "year": "1890",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Фрай", "Колин Ферт", "Дэвид Боуи"],
       "in_rus": true
@@ -1661,7 +1661,7 @@
       "src": "",
       "year": "1975",
       "likes": ["США", "Япония", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Ричард Чемберлен", "Тосиро Мифунэ", "Фрэнсис Форд Коппола"],
       "in_rus": true
@@ -1675,7 +1675,7 @@
       "src": "",
       "year": "1951",
       "likes": ["Великобритания", "США", "Австралия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Стивен Спилберг", "Брайан Олдисс", "Маргарет Этвуд"],
       "in_rus": true
@@ -1689,7 +1689,7 @@
       "src": "",
       "year": "1993",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1703,7 +1703,7 @@
       "src": "",
       "year": "1848",
       "likes": ["Великобритания", "США", "Индия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Шарлотта Бронте", "Джордж Элиот", "Вирджиния Вулф"],
       "in_rus": true
@@ -1717,7 +1717,7 @@
       "src": "",
       "year": "2000",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэвид Финчер", "Даррен Аронофски", "Джордан Пил"],
       "in_rus": true
@@ -1731,7 +1731,7 @@
       "src": "",
       "year": "1922",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Уинстон Черчилль", "Эрнест Хемингуэй", "Дама Эйлин Аткинс"],
       "in_rus": true
@@ -1745,7 +1745,7 @@
       "src": "",
       "year": "1998",
       "likes": ["США", "Великобритания", "Канада"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Опра Уинфри", "Стивен Кинг", "Билл Клинтон"],
       "in_rus": true
@@ -1759,7 +1759,7 @@
       "src": "",
       "year": "1991",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг", "Джордж Мартин"],
       "in_rus": true
@@ -1773,7 +1773,7 @@
       "src": "",
       "year": "1999",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": false
@@ -1787,7 +1787,7 @@
       "src": "",
       "year": "1902",
       "likes": ["Великобритания", "США", "Россия", "Япония"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Спилберг", "Владимир Набоков", "Иэн Маккеллен"],
       "in_rus": true
@@ -1801,7 +1801,7 @@
       "src": "",
       "year": "1990",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Маргарет Дрэббл", "Джулиан Барнс", "Гвендолин Райли"],
       "in_rus": true
@@ -1815,7 +1815,7 @@
       "src": "",
       "year": "1967",
       "likes": ["Россия", "США", "Германия", "Франция"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Мик Джаггер", "Патти Смит", "Сальвадор Дали"],
       "in_rus": true
@@ -1829,7 +1829,7 @@
       "src": "",
       "year": "1985",
       "likes": ["Канада", "США", "Великобритания", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джордж Оруэлл", "Дэвид Боуи", "Эмма Уотсон"],
       "in_rus": true
@@ -1843,7 +1843,7 @@
       "src": "",
       "year": "1975",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Сэмюэл Уэст", "Робби Колтрейн", "Джеральдин Макьюэн"],
       "in_rus": true
@@ -1857,7 +1857,7 @@
       "src": "",
       "year": "1952",
       "likes": ["США", "Великобритания", "Канада"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джеймс Дин", "Опра Уинфри", "Брюс Спрингстин"],
       "in_rus": true
@@ -1871,7 +1871,7 @@
       "src": "",
       "year": "1964",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1885,7 +1885,7 @@
       "src": "",
       "year": "1988",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг"],
       "in_rus": true
@@ -1899,7 +1899,7 @@
       "src": "",
       "year": "1982",
       "likes": ["США", "Великобритания", "ЮАР"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Спилберг", "Опра Уинфри", "Вупи Голдберг"],
       "in_rus": true
@@ -1913,7 +1913,7 @@
       "src": "",
       "year": "1994",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг"],
       "in_rus": true
@@ -1927,7 +1927,7 @@
       "src": "",
       "year": "1915",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Альфред Хичкок", "Роберт Донат", "Мэдлин Кэррол"],
       "in_rus": true
@@ -1941,7 +1941,7 @@
       "src": "",
       "year": "2002",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1955,7 +1955,7 @@
       "src": "",
       "year": "2007",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1969,7 +1969,7 @@
       "src": "",
       "year": "1929",
       "likes": ["Германия", "США", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Эрнест Хемингуэй", "Дж.Д. Сэлинджер", "Стивен Спилберг"],
       "in_rus": true
@@ -1983,7 +1983,7 @@
       "src": "",
       "year": "1997",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1997,7 +1997,7 @@
       "src": "",
       "year": "1995",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джон Кьюсак", "Джек Блэк", "Тим Роббинс"],
       "in_rus": true
@@ -2011,7 +2011,7 @@
       "src": "",
       "year": "1986",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Тим Карри", "Билл Скарсгард", "Джеймс Макэвой"],
       "in_rus": true
@@ -2025,7 +2025,7 @@
       "src": "",
       "year": "1961",
       "likes": ["Великобритания", "США", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Тим Бёртон", "Генри Селик", "Стивен Спилберг"],
       "in_rus": true
@@ -2039,7 +2039,7 @@
       "src": "",
       "year": "1996",
       "likes": ["США", "Великобритания", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Фрэнк Дарабонт", "Том Хэнкс", "Майкл Кларк Дункан"],
       "in_rus": true
@@ -2053,7 +2053,7 @@
       "src": "",
       "year": "1969",
       "likes": ["Франция", "США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стив Маккуин", "Дастин Хоффман", "Роберт Редфорд"],
       "in_rus": true
@@ -2067,7 +2067,7 @@
       "src": "",
       "year": "1993",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман", "Дж.К. Роулинг"],
       "in_rus": true
@@ -2081,7 +2081,7 @@
       "src": "",
       "year": "1969",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Рассел Кроу", "Пол Беттани", "Питер Уир"],
       "in_rus": true
@@ -2095,7 +2095,7 @@
       "src": "",
       "year": "2003",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2109,7 +2109,7 @@
       "src": "",
       "year": "1994",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман"],
       "in_rus": true
@@ -2123,7 +2123,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман"],
       "in_rus": true
@@ -2137,7 +2137,7 @@
       "src": "",
       "year": "1999",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман"],
       "in_rus": true
@@ -2151,7 +2151,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джо Райт", "Кира Найтли", "Джеймс Макэвой"],
       "in_rus": true
@@ -2165,7 +2165,7 @@
       "src": "",
       "year": "2002",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2179,7 +2179,7 @@
       "src": "",
       "year": "1956",
       "likes": ["Великобритания", "Польша"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -2193,7 +2193,7 @@
       "src": "",
       "year": "1962",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Милош Форман", "Джек Николсон", "Джерри Гарсия"],
       "in_rus": true
@@ -2207,7 +2207,7 @@
       "src": "",
       "year": "1899",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Фрэнсис Форд Коппола", "Т.С. Элиот", "Вирджиния Вулф"],
       "in_rus": true
@@ -2221,7 +2221,7 @@
       "src": "",
       "year": "1901",
       "likes": ["Великобритания", "Индия", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джордж Оруэлл", "Маргарет Тэтчер", "Стивен Кинг"],
       "in_rus": true
@@ -2235,7 +2235,7 @@
       "src": "",
       "year": "1991",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Рональд Мур", "Кэтрин Бигелоу", "Сэм Хьюэн"],
       "in_rus": true
@@ -2249,7 +2249,7 @@
       "src": "",
       "year": "1851",
       "likes": ["США", "Великобритания", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэвид Фостер Уоллес", "Джон Хьюстон", "Сергей Эйзенштейн"],
       "in_rus": true
@@ -2263,7 +2263,7 @@
       "src": "",
       "year": "1932",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": false
@@ -2277,7 +2277,7 @@
       "src": "",
       "year": "1993",
       "likes": ["США", "Канада", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Кевин Спейси", "Джулианна Мур", "Кейт Бланшетт"],
       "in_rus": true
@@ -2291,7 +2291,7 @@
       "src": "",
       "year": "1993",
       "likes": ["Великобритания", "ЮАР", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -2305,7 +2305,7 @@
       "src": "",
       "year": "1978",
       "likes": ["США", "Великобритания", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Робин Уильямс", "Гленн Клоуз", "Джон Литгоу"],
       "in_rus": true
@@ -2319,7 +2319,7 @@
       "src": "",
       "year": "1869",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -2333,7 +2333,7 @@
       "src": "",
       "year": "2005",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2347,7 +2347,7 @@
       "src": "",
       "year": "1978",
       "likes": ["Великобритания", "Индия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -2361,7 +2361,7 @@
       "src": "",
       "year": "1983",
       "likes": ["Великобритания", "США", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Николас Роуг", "Энджела Хьюстон", "Джим Хенсон"],
       "in_rus": true
@@ -2375,7 +2375,7 @@
       "src": "",
       "year": "1952",
       "likes": ["США", "Великобритания", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Э.Б. Уайт", "Гарт Уильямс", "Дебби Рейнольдс"],
       "in_rus": true
@@ -2389,7 +2389,7 @@
       "src": "",
       "year": "1818",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джон Милтон", "Лорд Байрон", "Кеннет Брана"],
       "in_rus": true
@@ -2403,7 +2403,7 @@
       "src": "",
       "year": "1971",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2417,7 +2417,7 @@
       "src": "",
       "year": "1952",
       "likes": ["США", "Куба", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": [
         "Джон Ф. Кеннеди",
@@ -2435,7 +2435,7 @@
       "src": "",
       "year": "1955",
       "likes": ["США", "Франция", "Россия", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стэнли Кубрик", "Джон Апдайк", "Мартин Эмис"],
       "in_rus": true
@@ -2449,7 +2449,7 @@
       "src": "",
       "year": "1980",
       "likes": ["Италия", "Франция", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Жан-Жак Анно", "Шон Коннери", "Кристиан Слейтер"],
       "in_rus": true
@@ -2463,7 +2463,7 @@
       "src": "",
       "year": "1991",
       "likes": ["Норвегия", "Германия", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Терри Пратчетт", "Билл Гейтс", "Опра Уинфри"],
       "in_rus": true
@@ -2477,7 +2477,7 @@
       "src": "",
       "year": "1995",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2491,7 +2491,7 @@
       "src": "",
       "year": "1970",
       "likes": ["Великобритания", "США", "Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Уэс Андерсон", "Джордж Клуни", "Мерил Стрип"],
       "in_rus": true
@@ -2505,7 +2505,7 @@
       "src": "",
       "year": "1970",
       "likes": ["США", "Франция", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Нил Даймонд", "Паркер Стивенсон", "Джеймс Франко"],
       "in_rus": true
@@ -2519,7 +2519,7 @@
       "src": "",
       "year": "1943",
       "likes": ["Франция", "США", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Элизабет Тейлор", "Уолт Дисней"],
       "in_rus": true
@@ -2533,7 +2533,7 @@
       "src": "",
       "year": "1996",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2547,7 +2547,7 @@
       "src": "",
       "year": "1838",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэвид Лин", "Алек Гиннесс", "Рон Муди"],
       "in_rus": true
@@ -2561,7 +2561,7 @@
       "src": "",
       "year": "1991",
       "likes": ["Австралия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2575,7 +2575,7 @@
       "src": "",
       "year": "1861",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Вирджиния Вулф", "Эмили Дикинсон", "Эмили Бронте"],
       "in_rus": true
@@ -2589,7 +2589,7 @@
       "src": "",
       "year": "1991",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Мэри Хэррон", "Кристиан Бэйл", "Джаред Лето"],
       "in_rus": true
@@ -2603,7 +2603,7 @@
       "src": "",
       "year": "1892",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2617,7 +2617,7 @@
       "src": "",
       "year": "1993",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Дэнни Бойл", "Юэн Макгрегор", "Роберт Карлайл"],
       "in_rus": true
@@ -2631,7 +2631,7 @@
       "src": "",
       "year": "1880",
       "likes": ["Швейцария", "Германия", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Спилберг", "Миядзаки Хаяо", "Ширли Темпл"],
       "in_rus": true
@@ -2645,7 +2645,7 @@
       "src": "",
       "year": "1913",
       "likes": ["Великобритания", "США", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Фрида Лоуренс", "Кен Рассел", "Тревор Ховард"],
       "in_rus": true
@@ -2659,7 +2659,7 @@
       "src": "",
       "year": "1984",
       "likes": ["Франция", "США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Филип Кауфман", "Дэниел Дэй-Льюис", "Жюльет Бинош"],
       "in_rus": true
@@ -2673,7 +2673,7 @@
       "src": "",
       "year": "1999",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -2687,7 +2687,7 @@
       "src": "",
       "year": "2000",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман"],
       "in_rus": true
@@ -2701,7 +2701,7 @@
       "src": "",
       "year": "1898",
       "likes": ["Великобритания", "США", "Франция", "Россия"],
-      "is_read": true,
+      "is_done": true,
       "series": false,
       "people": ["Орсон Уэллс", "Стивен Спилберг", "Том Круз"],
       "in_rus": true
@@ -2715,7 +2715,7 @@
       "src": "",
       "year": "1992",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Джек Блэк", "Джон Клиз", "Хэлли Берри"],
       "in_rus": true
@@ -2729,7 +2729,7 @@
       "src": "",
       "year": "1995",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Роберт Редфорд", "Кристин Скотт Томас", "Скарлетт Йоханссон"],
       "in_rus": true
@@ -2743,7 +2743,7 @@
       "src": "",
       "year": "1995",
       "likes": ["Канада", "Индия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -2757,7 +2757,7 @@
       "src": "",
       "year": "1991",
       "likes": ["Великобритания", "США", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Нил Гейман"],
       "in_rus": true
@@ -2771,7 +2771,7 @@
       "src": "",
       "year": "1958",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Джон Бурмен", "Хелен Миррен", "Найджел Терри"],
       "in_rus": true
@@ -2785,7 +2785,7 @@
       "src": "",
       "year": "1969",
       "likes": ["США", "Великобритания", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Джордж Буш", "Опра Уинфри"],
       "in_rus": true
@@ -2799,7 +2799,7 @@
       "src": "",
       "year": "1979",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Хизер Грэм", "Кирстен Данст", "Луис Флетчер"],
       "in_rus": true

@@ -28,11 +28,11 @@
                   <span>
                     <i
                       :class="{
-                        'pi pi-check': item.is_read,
-                        'pi pi-times': !item.is_read,
+                        'pi pi-check': item.is_done,
+                        'pi pi-times': !item.is_done,
                       }"
                       :style="{
-                        color: item.is_read ? 'green' : 'red',
+                        color: item.is_done ? 'green' : 'red',
                       }"
                     ></i>
                   </span>

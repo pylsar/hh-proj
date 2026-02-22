@@ -9,7 +9,7 @@
       "src": "",
       "year": "2011",
       "likes": ["Италия", "США", "Россия", "Франция"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Роксана Гей", "Зэди Смит"],
       "in_rus": true
@@ -23,7 +23,7 @@
       "src": "",
       "year": "2010",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Опра Уинфри"],
       "in_rus": false
@@ -37,7 +37,7 @@
       "src": "",
       "year": "2009",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Джоан Роулинг", "Маргарет Этвуд"],
       "in_rus": true
@@ -51,7 +51,7 @@
       "src": "",
       "year": "2003",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Тони Моррисон"],
       "in_rus": false
@@ -65,7 +65,7 @@
       "src": "",
       "year": "2001",
       "likes": ["США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Опра Уинфри", "Барак Обама"],
       "in_rus": true
@@ -79,7 +79,7 @@
       "src": "",
       "year": "2004",
       "likes": ["Испания", "Мексика", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Сьюзан Зонтаг"],
       "in_rus": true
@@ -93,7 +93,7 @@
       "src": "",
       "year": "2016",
       "likes": ["США", "Канада", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Опра Уинфри"],
       "in_rus": true
@@ -107,7 +107,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Германия", "Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Сьюзан Зонтаг"],
       "in_rus": true
@@ -121,7 +121,7 @@
       "src": "",
       "year": "2005",
       "likes": ["Великобритания", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Маргарет Этвуд"],
       "in_rus": true
@@ -135,7 +135,7 @@
       "src": "",
       "year": "2004",
       "likes": ["США", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -149,7 +149,7 @@
       "src": "",
       "year": "2007",
       "likes": ["США", "Латинская Америка", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Опра Уинфри"],
       "in_rus": true
@@ -163,7 +163,7 @@
       "src": "",
       "year": "2005",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Анна Винтур"],
       "in_rus": true
@@ -177,7 +177,7 @@
       "src": "",
       "year": "2006",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Опра Уинфри"],
       "in_rus": true
@@ -191,7 +191,7 @@
       "src": "",
       "year": "2014",
       "likes": ["Великобритания", "США"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Зэди Смит"],
       "in_rus": true
@@ -205,7 +205,7 @@
       "src": "",
       "year": "2017",
       "likes": ["США", "Корея", "Япония", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -219,7 +219,7 @@
       "src": "",
       "year": "2000",
       "likes": ["США", "Израиль", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Джордж Р.Р. Мартин", "Стивен Кинг"],
       "in_rus": true
@@ -233,7 +233,7 @@
       "src": "",
       "year": "2015",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -247,7 +247,7 @@
       "src": "",
       "year": "2017",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -261,7 +261,7 @@
       "src": "",
       "year": "2018",
       "likes": ["США", "Ирландия", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -275,7 +275,7 @@
       "src": "",
       "year": "2001",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -289,7 +289,7 @@
       "src": "",
       "year": "2016",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": false
@@ -303,7 +303,7 @@
       "src": "",
       "year": "2012",
       "likes": ["США", "Индия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -317,7 +317,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Канада", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Маргарет Этвуд"],
       "in_rus": true
@@ -331,7 +331,7 @@
       "src": "",
       "year": "2018",
       "likes": ["США", "Германия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -345,7 +345,7 @@
       "src": "",
       "year": "2003",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -359,7 +359,7 @@
       "src": "",
       "year": "2001",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Фрай"],
       "in_rus": true
@@ -373,7 +373,7 @@
       "src": "",
       "year": "2013",
       "likes": ["США", "Нигерия", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама", "Мишель Обама"],
       "in_rus": true
@@ -387,7 +387,7 @@
       "src": "",
       "year": "2004",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -401,7 +401,7 @@
       "src": "",
       "year": "2000",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Зэди Смит"],
       "in_rus": true
@@ -415,7 +415,7 @@
       "src": "",
       "year": "2017",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -429,7 +429,7 @@
       "src": "",
       "year": "2000",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Салман Рушди"],
       "in_rus": true
@@ -443,7 +443,7 @@
       "src": "",
       "year": "2004",
       "likes": ["Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -457,7 +457,7 @@
       "src": "",
       "year": "2011",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -471,7 +471,7 @@
       "src": "",
       "year": "2014",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -485,7 +485,7 @@
       "src": "",
       "year": "2006",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -499,7 +499,7 @@
       "src": "",
       "year": "2015",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Тони Моррисон"],
       "in_rus": false
@@ -513,7 +513,7 @@
       "src": "",
       "year": "2008",
       "likes": ["Франция", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -527,7 +527,7 @@
       "src": "",
       "year": "1998",
       "likes": ["Испания", "Мексика", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -541,7 +541,7 @@
       "src": "",
       "year": "2010",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -555,7 +555,7 @@
       "src": "",
       "year": "2014",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -569,7 +569,7 @@
       "src": "",
       "year": "2021",
       "likes": ["Ирландия", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -583,7 +583,7 @@
       "src": "",
       "year": "2014",
       "likes": ["США", "Ямайка", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -597,7 +597,7 @@
       "src": "",
       "year": "2005",
       "likes": ["Великобритания", "США", "Европейские страны"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Тимоти Гартон Эш"],
       "in_rus": false
@@ -611,7 +611,7 @@
       "src": "",
       "year": "2015",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -625,7 +625,7 @@
       "src": "",
       "year": "2015",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -639,7 +639,7 @@
       "src": "",
       "year": "2013",
       "likes": ["США", "Россия", "Великобритания"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Стивен Кинг"],
       "in_rus": true
@@ -653,7 +653,7 @@
       "src": "",
       "year": "2008",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -667,7 +667,7 @@
       "src": "",
       "year": "2000",
       "likes": ["Франция", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -681,7 +681,7 @@
       "src": "",
       "year": "2007",
       "likes": ["Корея", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -695,7 +695,7 @@
       "src": "",
       "year": "2022",
       "likes": ["США", "Аргентина", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -709,7 +709,7 @@
       "src": "",
       "year": "2013",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -723,7 +723,7 @@
       "src": "",
       "year": "2002",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -737,7 +737,7 @@
       "src": "",
       "year": "2004",
       "likes": ["Канада", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Маргарет Этвуд"],
       "in_rus": true
@@ -751,7 +751,7 @@
       "src": "",
       "year": "2013",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -765,7 +765,7 @@
       "src": "",
       "year": "2006",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -779,7 +779,7 @@
       "src": "",
       "year": "2013",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -793,7 +793,7 @@
       "src": "",
       "year": "2001",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -807,7 +807,7 @@
       "src": "",
       "year": "2022",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -821,7 +821,7 @@
       "src": "",
       "year": "2002",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -835,7 +835,7 @@
       "src": "",
       "year": "2018",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Роксана Гей"],
       "in_rus": false
@@ -849,7 +849,7 @@
       "src": "",
       "year": "2022",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -863,7 +863,7 @@
       "src": "",
       "year": "2014",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -877,7 +877,7 @@
       "src": "",
       "year": "2005",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -891,7 +891,7 @@
       "src": "",
       "year": "2014",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -905,7 +905,7 @@
       "src": "",
       "year": "2004",
       "likes": ["США", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -919,7 +919,7 @@
       "src": "",
       "year": "2011",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -933,7 +933,7 @@
       "src": "",
       "year": "2012",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -947,7 +947,7 @@
       "src": "",
       "year": "2018",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -961,7 +961,7 @@
       "src": "",
       "year": "2010",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -975,7 +975,7 @@
       "src": "",
       "year": "2006",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -989,7 +989,7 @@
       "src": "",
       "year": "1967-1971",
       "likes": ["Дания", "Норвегия", "Швеция"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": false
@@ -1003,7 +1003,7 @@
       "src": "",
       "year": "2013",
       "likes": ["Россия", "Украина", "Беларусь", "Германия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1017,7 +1017,7 @@
       "src": "",
       "year": "2012",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": ["Барак Обама"],
       "in_rus": false
@@ -1031,7 +1031,7 @@
       "src": "",
       "year": "2008",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1045,7 +1045,7 @@
       "src": "",
       "year": "2017",
       "likes": ["Пакистан", "Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -1059,7 +1059,7 @@
       "src": "",
       "year": "2022",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1073,7 +1073,7 @@
       "src": "",
       "year": "2018",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Опра Уинфри"],
       "in_rus": true
@@ -1087,7 +1087,7 @@
       "src": "",
       "year": "2019",
       "likes": ["Норвегия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -1101,7 +1101,7 @@
       "src": "",
       "year": "2015",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1115,7 +1115,7 @@
       "src": "",
       "year": "2014",
       "likes": ["Италия", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -1129,7 +1129,7 @@
       "src": "",
       "year": "2011",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1143,7 +1143,7 @@
       "src": "",
       "year": "2017",
       "likes": ["Мексика", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1157,7 +1157,7 @@
       "src": "",
       "year": "2020",
       "likes": ["Чили", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1171,7 +1171,7 @@
       "src": "",
       "year": "2010",
       "likes": ["США", "Индия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": ["Барак Обама"],
       "in_rus": true
@@ -1185,7 +1185,7 @@
       "src": "",
       "year": "2000",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1199,7 +1199,7 @@
       "src": "",
       "year": "2018",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1213,7 +1213,7 @@
       "src": "",
       "year": "2021",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1227,7 +1227,7 @@
       "src": "",
       "year": "2014",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1241,7 +1241,7 @@
       "src": "",
       "year": "2016",
       "likes": ["Великобритания", "Ливия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1255,7 +1255,7 @@
       "src": "",
       "year": "2015",
       "likes": ["США", "Вьетнам", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1269,7 +1269,7 @@
       "src": "",
       "year": "2000",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1283,7 +1283,7 @@
       "src": "",
       "year": "2002",
       "likes": ["Италия", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1297,7 +1297,7 @@
       "src": "",
       "year": "2014",
       "likes": ["Канада", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1311,7 +1311,7 @@
       "src": "",
       "year": "2005",
       "likes": ["Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1325,7 +1325,7 @@
       "src": "",
       "year": "2012",
       "likes": ["Великобритания", "США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": true,
       "people": [],
       "in_rus": true
@@ -1339,7 +1339,7 @@
       "src": "",
       "year": "2019",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1353,7 +1353,7 @@
       "src": "",
       "year": "2013",
       "likes": ["США"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": false
@@ -1367,7 +1367,7 @@
       "src": "",
       "year": "2001",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1381,7 +1381,7 @@
       "src": "",
       "year": "2014",
       "likes": ["Великобритания", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true
@@ -1395,7 +1395,7 @@
       "src": "",
       "year": "2007",
       "likes": ["США", "Россия"],
-      "is_read": false,
+      "is_done": false,
       "series": false,
       "people": [],
       "in_rus": true

@@ -77,10 +77,10 @@ const getData = (): void => {
 
   // Подсчитываем количество прочитанных и непрочитанных книг
   const readCount: number = books.filter(
-    (book) => book.is_read === true
+    (book) => book.is_done === true
   ).length;
   const unreadCount: number = books.filter(
-    (book) => book.is_read === false
+    (book) => book.is_done === false
   ).length;
 
   // Формируем данные для диаграммы
