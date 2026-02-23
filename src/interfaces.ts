@@ -16,7 +16,7 @@ export interface BookBbc {
   author: string;
   country: string;
   src: string;
-  year: string;
+  year: string | number;
   likes: string[];
   is_done: boolean;
   series: boolean;
