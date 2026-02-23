@@ -11,6 +11,7 @@ import { useRoute, useRouter } from 'vue-router';
 import bbcData from '@/assets/db/bbcTop.json';
 import newYorkTimesData from '@/assets/db/newYorkTimes.json';
 import gameAwwardsData from '@/assets/db/gameAwwards.json';
+import imdbTopData from '@/assets/db/imbdTop.json';
 import type { BookBbc } from '@/interfaces';
 
 // Получаем текущий маршрут
@@ -23,6 +24,7 @@ const allBooks: BookBbc[] = [
   ...bbcData.bbcTop,
   ...newYorkTimesData.NewYorkTimes,
   ...gameAwwardsData.gameAwwards,
+  ...imdbTopData.imdbTop,
 ];
 
 onMounted(() => {
