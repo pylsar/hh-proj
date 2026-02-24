@@ -9,7 +9,7 @@
       "src": "",
       "year": 1994,
       "likes": ["США", "Великобритания", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Стивен Кинг", "Роджер Эберт", "Барак Обама"],
       "in_rus": true
@@ -23,7 +23,7 @@
       "src": "",
       "year": 1972,
       "likes": ["США", "Италия", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Мартин Скорсезе", "Стивен Спилберг", "Аль Пачино"],
       "in_rus": true
@@ -37,7 +37,7 @@
       "src": "",
       "year": 2008,
       "likes": ["США", "Великобритания", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Кристиан Бейл", "Хит Леджер", "Квентин Тарантино"],
       "in_rus": true
@@ -51,7 +51,7 @@
       "src": "",
       "year": 1974,
       "likes": ["США", "Италия", "Канада"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Роберт Де Ниро", "Фрэнсис Форд Коппола", "Дэвид Чейз"],
       "in_rus": true
@@ -79,7 +79,7 @@
       "src": "",
       "year": 2003,
       "likes": ["Новая Зеландия", "США", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Питер Джексон", "Фрэн Уолш", "Гильермо дель Торо"],
       "in_rus": true
@@ -107,7 +107,7 @@
       "src": "",
       "year": 2001,
       "likes": ["Новая Зеландия", "США", "Австралия"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Иэн Маккеллен", "Элайджа Вуд", "Вигго Мортенсен"],
       "in_rus": true
@@ -121,7 +121,7 @@
       "src": "",
       "year": 1994,
       "likes": ["США", "Франция", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Квентин Тарантино", "Ума Турман", "Джон Траволта"],
       "in_rus": true
@@ -149,7 +149,7 @@
       "src": "",
       "year": 1994,
       "likes": ["США", "Канада", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Том Хэнкс", "Роберт Земекис", "Робин Райт"],
       "in_rus": true
@@ -163,7 +163,7 @@
       "src": "",
       "year": 2002,
       "likes": ["Новая Зеландия", "США", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Энди Серкис", "Питер Джексон", "Шон Эстин"],
       "in_rus": true
@@ -177,7 +177,7 @@
       "src": "",
       "year": 1999,
       "likes": ["США", "Германия", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Эдвард Нортон", "Брэд Питт", "Дэвид Финчер"],
       "in_rus": true
@@ -191,7 +191,7 @@
       "src": "",
       "year": 2010,
       "likes": ["США", "Великобритания", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Кристофер Нолан", "Ханс Циммер"],
       "in_rus": true
@@ -205,7 +205,7 @@
       "src": "",
       "year": 1980,
       "likes": ["США", "Великобритания", "Канада"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Джордж Лукас", "Харрисон Форд", "Марк Хэмилл"],
       "in_rus": true
@@ -219,7 +219,7 @@
       "src": "",
       "year": 1999,
       "likes": ["США", "Австралия", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Киану Ривз", "Вачовски", "Кари-Хироюки Тагава"],
       "in_rus": true
@@ -247,7 +247,7 @@
       "src": "",
       "year": 2014,
       "likes": ["США", "Великобритания", "Канада"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Мэттью МакКонахи", "Джессика Честейн", "Кристофер Нолан"],
       "in_rus": true
@@ -331,7 +331,7 @@
       "src": "",
       "year": 1998,
       "likes": ["США", "Великобритания", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Том Хэнкс", "Стивен Спилберг", "Мэтт Деймон"],
       "in_rus": true
@@ -345,7 +345,7 @@
       "src": "",
       "year": 1999,
       "likes": ["США", "Канада", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Том Хэнкс", "Майкл Кларк Дункан", "Стивен Кинг"],
       "in_rus": true
@@ -387,7 +387,7 @@
       "src": "",
       "year": 1991,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Арнольд Шварценеггер", "Джеймс Кэмерон", "Линда Хэмилтон"],
       "in_rus": true
@@ -401,7 +401,7 @@
       "src": "",
       "year": 1977,
       "likes": ["США", "Великобритания", "Канада"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Джордж Лукас", "Харрисон Форд", "Марк Хэмилл"],
       "in_rus": true
@@ -415,7 +415,7 @@
       "src": "",
       "year": 1985,
       "likes": ["США", "Канада", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Майкл Джей Фокс", "Кристофер Ллойд", "Роберт Земекис"],
       "in_rus": true
@@ -457,7 +457,7 @@
       "src": "",
       "year": 2000,
       "likes": ["США", "Великобритания", "Италия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Рассел Кроу", "Ридли Скотт", "Хоакин Феникс"],
       "in_rus": true
@@ -499,7 +499,7 @@
       "src": "",
       "year": 1994,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Ханс Циммер", "Элтон Джон", "Джеймс Эрл Джонс"],
       "in_rus": true
@@ -527,7 +527,7 @@
       "src": "",
       "year": 2006,
       "likes": ["США", "Гонконг", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Мэтт Деймон", "Джек Николсон"],
       "in_rus": true
@@ -597,7 +597,7 @@
       "src": "",
       "year": 1994,
       "likes": ["Франция", "США", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Жан Рено", "Натали Портман", "Гэри Олдман"],
       "in_rus": true
@@ -653,7 +653,7 @@
       "src": "",
       "year": 2011,
       "likes": ["Франция", "Германия", "Италия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Омар Си", "Франсуа Клюзе", "Толледано и Накаш"],
       "in_rus": true
@@ -681,7 +681,7 @@
       "src": "",
       "year": 1979,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Ридли Скотт", "Сигурни Уивер", "Дэн О'Бэннон"],
       "in_rus": true
@@ -723,7 +723,7 @@
       "src": "",
       "year": 2012,
       "likes": ["США", "Франция", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Джейми Фокс", "Кристоф Вальц", "Леонардо ДиКаприо"],
       "in_rus": true
@@ -821,7 +821,7 @@
       "src": "",
       "year": 1981,
       "likes": ["США", "Великобритания", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Харрисон Форд", "Стивен Спилберг", "Джон Рис-Дэвис"],
       "in_rus": true
@@ -877,7 +877,7 @@
       "src": "",
       "year": 2018,
       "likes": ["США", "Япония", "Мексика"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Шамик Мур", "Фил Лорд", "Кристофер Миллер"],
       "in_rus": true
@@ -961,7 +961,7 @@
       "src": "",
       "year": 1986,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Сигурни Уивер", "Джеймс Кэмерон", "Майкл Бьен"],
       "in_rus": true
@@ -989,7 +989,7 @@
       "src": "",
       "year": 2012,
       "likes": ["США", "Великобритания", "Австралия"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Кристиан Бейл", "Том Харди", "Энн Хэтэуэй"],
       "in_rus": true
@@ -1073,7 +1073,7 @@
       "src": "",
       "year": 1995,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Том Хэнкс", "Тим Аллен", "Джон Лэсситер"],
       "in_rus": true
@@ -1087,7 +1087,7 @@
       "src": "",
       "year": 1964,
       "likes": ["США", "Великобритания", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Питер Селлерс", "Стэнли Кубрик", "Джордж К. Скотт"],
       "in_rus": true
@@ -1129,7 +1129,7 @@
       "src": "",
       "year": 1995,
       "likes": ["США", "Великобритания", "Австралия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Мел Гибсон", "Софи Марсо", "Джеймс Хорнер"],
       "in_rus": true
@@ -1227,7 +1227,7 @@
       "src": "",
       "year": 1984,
       "likes": ["Италия", "США", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Роберт Де Ниро", "Джеймс Вудс", "Эннио Морриконе"],
       "in_rus": true
@@ -1283,7 +1283,7 @@
       "src": "",
       "year": 1983,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Марк Хэмилл", "Харрисон Форд", "Иэн Макдермид"],
       "in_rus": true
@@ -1297,7 +1297,7 @@
       "src": "",
       "year": 2010,
       "likes": ["США", "Великобритания", "Мексика"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Том Хэнкс", "Тим Аллен", "Ли Анкрич"],
       "in_rus": true
@@ -1437,7 +1437,7 @@
       "src": "",
       "year": 1983,
       "likes": ["США", "Куба", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Аль Пачино", "Мишель Пфайффер", "Брайан Де Пальма"],
       "in_rus": true
@@ -1493,7 +1493,7 @@
       "src": "",
       "year": 2009,
       "likes": ["США", "Мексика", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Эдвард Аснер", "Майкл Джаккино", "Пит Доктер"],
       "in_rus": true
@@ -1619,7 +1619,7 @@
       "src": "",
       "year": 1988,
       "likes": ["США", "Великобритания", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Брюс Уиллис", "Алан Рикман", "Джон Мактирнан"],
       "in_rus": true
@@ -1647,7 +1647,7 @@
       "src": "",
       "year": 1989,
       "likes": ["США", "Великобритания", "Италия"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Харрисон Форд", "Шон Коннери", "Стивен Спилберг"],
       "in_rus": true
@@ -1689,7 +1689,7 @@
       "src": "",
       "year": 2000,
       "likes": ["Великобритания", "США", "Россия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Джейсон Стэйтем", "Брэд Питт", "Гай Ричи"],
       "in_rus": true
@@ -1703,7 +1703,7 @@
       "src": "",
       "year": 2019,
       "likes": ["Великобритания", "США", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Джордж МакКэй", "Дин-Чарльз Чепмен", "Роджер Дикинс"],
       "in_rus": true
@@ -1717,7 +1717,7 @@
       "src": "",
       "year": 2023,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Киллиан Мерфи", "Роберт Дауни мл.", "Кристофер Нолан"],
       "in_rus": true
@@ -1787,7 +1787,7 @@
       "src": "",
       "year": 2013,
       "likes": ["США", "Великобритания", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Мартин Скорсезе", "Джона Хилл"],
       "in_rus": true
@@ -1801,7 +1801,7 @@
       "src": "",
       "year": 2018,
       "likes": ["США", "Китай", "Италия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Вигго Мортенсен", "Маершала Али", "Питер Фаррелли"],
       "in_rus": true
@@ -1815,7 +1815,7 @@
       "src": "",
       "year": 1998,
       "likes": ["США", "Великобритания", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Джим Керри", "Лора Линни", "Эд Харрис"],
       "in_rus": true
@@ -1843,7 +1843,7 @@
       "src": "",
       "year": 2005,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Кристиан Бейл", "Кристофер Нолан", "Лайам Нисон"],
       "in_rus": true
@@ -1857,7 +1857,7 @@
       "src": "",
       "year": 1976,
       "likes": ["США", "Франция", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Роберт Де Ниро", "Джоди Фостер", "Мартин Скорсезе"],
       "in_rus": true
@@ -1899,7 +1899,7 @@
       "src": "",
       "year": 2010,
       "likes": ["США", "Великобритания", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Марк Руффало", "Бен Кингсли"],
       "in_rus": true
@@ -1913,7 +1913,7 @@
       "src": "",
       "year": 1959,
       "likes": ["США", "Франция", "Италия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Мэрилин Монро", "Тони Кертис", "Джек Леммон"],
       "in_rus": true
@@ -1941,7 +1941,7 @@
       "src": "",
       "year": 1993,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Сэм Нилл", "Лора Дерн", "Джефф Голдблюм"],
       "in_rus": true
@@ -2123,7 +2123,7 @@
       "src": "",
       "year": 2003,
       "likes": ["США", "Япония", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Ума Турман", "Люси Лью", "Дэвид Кэррадайн"],
       "in_rus": true
@@ -2179,7 +2179,7 @@
       "src": "",
       "year": 2003,
       "likes": ["США", "Австралия", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Эллен ДеДженерес", "Альберт Брукс", "Томас Ньюман"],
       "in_rus": true
@@ -2193,7 +2193,7 @@
       "src": "",
       "year": 2004,
       "likes": ["Япония", "США", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Хаяо Миядзаки", "Джо Хисаиси", "Тиэко Байсё"],
       "in_rus": true
@@ -2207,7 +2207,7 @@
       "src": "",
       "year": 1961,
       "likes": ["Япония", "США", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Тосиро Мифунэ", "Акира Куросава", "Такаси Симура"],
       "in_rus": true
@@ -2277,7 +2277,7 @@
       "src": "",
       "year": 2019,
       "likes": ["Испания", "США", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Джейсон Шварцман", "Дж.К. Симмонс", "Серхио Паблос"],
       "in_rus": true
@@ -2347,7 +2347,7 @@
       "src": "",
       "year": 1998,
       "likes": ["Великобритания", "США", "Россия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Джейсон Флеминг", "Декстер Флетчер", "Ник Моран"],
       "in_rus": true
@@ -2361,7 +2361,7 @@
       "src": "",
       "year": 2005,
       "likes": ["Великобритания", "США", "Германия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Хьюго Уивинг", "Натали Портман", "Джеймс МакТиг"],
       "in_rus": true
@@ -2403,7 +2403,7 @@
       "src": "",
       "year": 2002,
       "likes": ["США", "Франция", "Канада"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Леонардо ДиКаприо", "Том Хэнкс", "Кристофер Уокен"],
       "in_rus": true
@@ -2487,7 +2487,7 @@
       "src": "",
       "year": 2011,
       "likes": ["Великобритания", "США", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Дэниел Рэдклифф", "Руперт Гринт", "Эмма Уотсон"],
       "in_rus": true
@@ -2557,7 +2557,7 @@
       "src": "",
       "year": 2004,
       "likes": ["США", "Канада", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Хилари Суэнк", "Клинт Иствуд", "Морган Фриман"],
       "in_rus": true
@@ -2659,7 +2659,7 @@
       "src": "",
       "year": 2016,
       "likes": ["США", "Австралия", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Эндрю Гарфилд", "Мел Гибсон", "Винс Вон"],
       "in_rus": true
@@ -2687,7 +2687,7 @@
       "src": "",
       "year": 2013,
       "likes": ["США", "Великобритания", "Франция"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Чиветел Эджиофор", "Майкл Фассбендер", "Лупита Нионго"],
       "in_rus": true
@@ -2757,7 +2757,7 @@
       "src": "",
       "year": 2007,
       "likes": ["США", "Франция", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Пэттон Освальт", "Лу Романо", "Брэд Бёрд"],
       "in_rus": true
@@ -2785,7 +2785,7 @@
       "src": "",
       "year": 2010,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Джей Барушель", "Джерард Батлер", "Крис Сандерс"],
       "in_rus": true
@@ -2799,7 +2799,7 @@
       "src": "",
       "year": 2001,
       "likes": ["США", "Япония", "Мексика"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Билли Кристал", "Джон Гудман", "Стив Бушеми"],
       "in_rus": true
@@ -2813,7 +2813,7 @@
       "src": "",
       "year": 1975,
       "likes": ["США", "Австралия", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Рой Шайдер", "Ричард Дрейфус", "Джон Уильямс"],
       "in_rus": true
@@ -2841,7 +2841,7 @@
       "src": "",
       "year": 2019,
       "likes": ["США", "Франция", "Италия"],
-      "is_done": false,
+      "is_done": true,
       "series": false,
       "people": ["Мэтт Деймон", "Кристиан Бейл", "Джеймс Мэнголд"],
       "in_rus": true
@@ -2995,7 +2995,7 @@
       "src": "",
       "year": 1976,
       "likes": ["США", "Канада", "Великобритания"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Сильвестр Сталлоне", "Талия Шайр", "Берт Янг"],
       "in_rus": true
@@ -3051,7 +3051,7 @@
       "src": "",
       "year": 2003,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Джонни Депп", "Орландо Блум", "Кира Найтли"],
       "in_rus": true
@@ -3093,7 +3093,7 @@
       "src": "",
       "year": 1984,
       "likes": ["США", "Великобритания", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Арнольд Шварценеггер", "Линда Хэмилтон", "Майкл Бьен"],
       "in_rus": true
@@ -3247,7 +3247,7 @@
       "src": "",
       "year": 2004,
       "likes": ["США", "Канада", "Япония"],
-      "is_done": false,
+      "is_done": true,
       "series": true,
       "people": ["Крэйг Нельсон", "Холли Хантер", "Сэмюэл Л. Джексон"],
       "in_rus": true
